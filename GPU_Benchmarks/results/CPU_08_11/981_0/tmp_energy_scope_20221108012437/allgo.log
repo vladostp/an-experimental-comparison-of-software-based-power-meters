@@ -1,0 +1,50 @@
+
+This is app 'energy-scope' run with:
+ - parameters: n
+ - input files: energy_scope_20221108012437.tar.gz
+
+
+We can iterate on input files:
+energy_scope: processing: energy_scope_20221108012437.tar.gz
+energy_scope: information: regular mode
+es_config.json
+energy_scope_20221108012437.log
+energy_scope_cmd_20221108012437
+energy_scope_einfo_20221108012437.txt
+energy_scope_enode_20221108012437_gemini-1.txt
+es_discover_result_20221108012437_gemini-1.txt
+es_read_rt_result_20221108012437_gemini-1.txt
+energy_scope: information: enodes already generated
+energy_scope: warning: mpi information NOT found
+energy_scope: tags information found and inserted
+es: tags: file energy_scope_tmp_from_appli_.txt does not exist, we create it
+es: tags: writing result to energy_scope_tmp_from_appli_.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-e__embii because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es: enode2e: writing eprofile to energy_scope_eprofile_20221108012437.txt
+es: enode2e: writing estat to energy_scope_estat_20221108012437.txt
+es: info: estimate: overwriting estat to energy_scope_estat_20221108012437.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-xj027r_4 because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es_video: information: <2> etotal filled
+es plot : writing result to energy_scope_plot_20221108012437_global.png
+es plot : writing result to energy_scope_plot_20221108012437_gemini-1-0.png
+es plot : writing result to energy_scope_plot_20221108012437_gemini-1-1.png
+ es_video: info: saving image: ./image_01006.png
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata.
+  Falling back to 'report'
+Loading pages (1/6)
+[>                                                           ] 0%[======>                                                     ] 10%[=======>                                                    ] 12%[===================>                                        ] 33%[=========================>                                  ] 43%[============================>                               ] 48%[============================================================] 100%Counting pages (2/6)                                               
+[============================================================] Object 1 of 1Resolving links (4/6)                                                       
+[============================================================] Object 1 of 1Loading headers and footers (5/6)                                           
+Printing pages (6/6)
+[>                                                           ] Preparing[=========>                                                  ] Page 1 of 6[===================>                                        ] Page 2 of 6[==============================>                             ] Page 3 of 6[=======================================>                    ] Page 4 of 6[=================================================>          ] Page 5 of 6[============================================================] Page 6 of 6Done                                                                      
+energy_scope: information: clean up
+The workdir now contains:
+total 1696
+-rw-r--r-- 1 500 500    3736 Nov  8 00:33 allgo.log
+-rw-r--r-- 1 500 500  233438 Nov  8 00:33 energy_scope_20221108012437.tar.gz
+-rw-r--r-- 1 500 500 1201647 Nov  8 00:33 energy_scope_eprofile_20221108012437.txt
+-rw-r--r-- 1 500 500    5725 Nov  8 00:33 energy_scope_estat_20221108012437.txt
+-rw-r--r-- 1 500 500  284592 Nov  8 00:33 report.pdf
+
+====  ALLGO JOB SUCCESS  ====

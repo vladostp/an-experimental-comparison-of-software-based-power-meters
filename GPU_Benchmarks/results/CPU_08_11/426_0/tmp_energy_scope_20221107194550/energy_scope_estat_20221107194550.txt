@@ -1,0 +1,246 @@
+{
+  "date": "2022/11/07 18:54:25",
+  "pgm": "energy_scope@inria",
+  "duration(sec)": 504,
+  "from_appli": {
+    "jobid": "20221107194550",
+    "user": "",
+    "command": "/root/energy-consumption-of-gpu-benchmarks//results/night_exp_08_11/426_0//gpu0/scripts/script_final.sh",
+    "comment": ""
+  },
+  "arch": {
+    "data": {
+      "total": {
+        "node": 1,
+        "phy": 2,
+        "core": 40,
+        "gpu": 0
+      },
+      "node_list": [
+        "gemini-1"
+      ],
+      "joule(J)": {
+        "etotal(J)": 94553,
+        "ecpu(J)": 77834,
+        "edram(J)": 16719,
+        "etotal(%)": 100.0
+      },
+      "energy_est": {
+        "etotal(J)": 124793,
+        "etotal(kWh)": 0.035,
+        "model": "joule_model_202203"
+      },
+      "carbon": {
+        "country": "FR",
+        "carbon(gCO2)": 1.789,
+        "model": "carbon_model_202203"
+      }
+    },
+    "arch": {
+      "gemini-1": {
+        "data": {
+          "acquisition(ms)": {
+            "min": 504.0,
+            "max": 910.0,
+            "mean": 562.737
+          },
+          "power(W)": {
+            "min": 165.354,
+            "max": 264.448,
+            "mean": 184.068
+          }
+        },
+        "arch": {
+          "0": {
+            "arch": {
+              "0": {
+                "arch": {},
+                "data": {}
+              },
+              "1": {
+                "arch": {},
+                "data": {}
+              },
+              "2": {
+                "arch": {},
+                "data": {}
+              },
+              "3": {
+                "arch": {},
+                "data": {}
+              },
+              "4": {
+                "arch": {},
+                "data": {}
+              },
+              "5": {
+                "arch": {},
+                "data": {}
+              },
+              "6": {
+                "arch": {},
+                "data": {}
+              },
+              "7": {
+                "arch": {},
+                "data": {}
+              },
+              "8": {
+                "arch": {},
+                "data": {}
+              },
+              "9": {
+                "arch": {},
+                "data": {}
+              },
+              "10": {
+                "arch": {},
+                "data": {}
+              },
+              "11": {
+                "arch": {},
+                "data": {}
+              },
+              "12": {
+                "arch": {},
+                "data": {}
+              },
+              "13": {
+                "arch": {},
+                "data": {}
+              },
+              "14": {
+                "arch": {},
+                "data": {}
+              },
+              "15": {
+                "arch": {},
+                "data": {}
+              },
+              "16": {
+                "arch": {},
+                "data": {}
+              },
+              "17": {
+                "arch": {},
+                "data": {}
+              },
+              "18": {
+                "arch": {},
+                "data": {}
+              },
+              "19": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Intel(R)Xeon(R)CPUE5-2698v4@2.20GHz",
+              "core": 20,
+              "joule(J)": {
+                "etotal(J)": 47810,
+                "ecpu(J)": 39568,
+                "edram(J)": 8242,
+                "etotal(%)": 50.56
+              }
+            }
+          },
+          "1": {
+            "arch": {
+              "20": {
+                "arch": {},
+                "data": {}
+              },
+              "21": {
+                "arch": {},
+                "data": {}
+              },
+              "22": {
+                "arch": {},
+                "data": {}
+              },
+              "23": {
+                "arch": {},
+                "data": {}
+              },
+              "24": {
+                "arch": {},
+                "data": {}
+              },
+              "25": {
+                "arch": {},
+                "data": {}
+              },
+              "26": {
+                "arch": {},
+                "data": {}
+              },
+              "27": {
+                "arch": {},
+                "data": {}
+              },
+              "28": {
+                "arch": {},
+                "data": {}
+              },
+              "29": {
+                "arch": {},
+                "data": {}
+              },
+              "30": {
+                "arch": {},
+                "data": {}
+              },
+              "31": {
+                "arch": {},
+                "data": {}
+              },
+              "32": {
+                "arch": {},
+                "data": {}
+              },
+              "33": {
+                "arch": {},
+                "data": {}
+              },
+              "34": {
+                "arch": {},
+                "data": {}
+              },
+              "35": {
+                "arch": {},
+                "data": {}
+              },
+              "36": {
+                "arch": {},
+                "data": {}
+              },
+              "37": {
+                "arch": {},
+                "data": {}
+              },
+              "38": {
+                "arch": {},
+                "data": {}
+              },
+              "39": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Intel(R)Xeon(R)CPUE5-2698v4@2.20GHz",
+              "core": 20,
+              "joule(J)": {
+                "etotal(J)": 46743,
+                "ecpu(J)": 38266,
+                "edram(J)": 8477,
+                "etotal(%)": 49.44
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

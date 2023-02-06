@@ -1,0 +1,14 @@
+[Unit]
+Description=HWPC Sensor
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+LimitNOFILE=65536
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/opt/hwpc-sensor --config-file /opt/hwpc_config.json
+
+[Install]
+WantedBy=multi-user.target

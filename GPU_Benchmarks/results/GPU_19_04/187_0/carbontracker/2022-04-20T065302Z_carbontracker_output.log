@@ -1,0 +1,36 @@
+2022-04-20 06:53:02 - CarbonTracker: The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 06:56:57 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 06:56:57 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:03:25
+	Energy:	0.124982 kWh
+	CO2eq:	36.770522 g
+	This is equivalent to:
+	0.305403 km travelled by car
+2022-04-20 06:56:58 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 06:56:58 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:03:25
+	Energy:	0.124982 kWh
+	CO2eq:	36.770522 g
+	This is equivalent to:
+	0.305403 km travelled by car
+2022-04-20 06:56:58 - CarbonTracker: Finished monitoring.
+2022-04-20 06:57:28 - CarbonTracker: The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 06:59:07 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 06:59:07 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:09
+	Energy:	0.054448 kWh
+	CO2eq:	16.018905 g
+	This is equivalent to:
+	0.133047 km travelled by car
+2022-04-20 06:59:07 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 06:59:07 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:09
+	Energy:	0.054448 kWh
+	CO2eq:	16.018905 g
+	This is equivalent to:
+	0.133047 km travelled by car
+2022-04-20 06:59:07 - CarbonTracker: Finished monitoring.

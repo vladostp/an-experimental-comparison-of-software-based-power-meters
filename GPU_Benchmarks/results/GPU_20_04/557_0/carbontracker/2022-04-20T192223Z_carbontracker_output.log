@@ -1,0 +1,54 @@
+2022-04-20 19:22:35 - CarbonTracker: The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 19:25:43 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 19:25:43 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:42
+	Energy:	0.048370 kWh
+	CO2eq:	14.230624 g
+	This is equivalent to:
+	0.118195 km travelled by car
+2022-04-20 19:25:43 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 19:25:43 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:42
+	Energy:	0.048370 kWh
+	CO2eq:	14.230624 g
+	This is equivalent to:
+	0.118195 km travelled by car
+2022-04-20 19:25:43 - CarbonTracker: Finished monitoring.
+2022-04-20 19:26:25 - CarbonTracker: The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 19:30:15 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 19:30:15 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:03:25
+	Energy:	0.126347 kWh
+	CO2eq:	37.171960 g
+	This is equivalent to:
+	0.308737 km travelled by car
+2022-04-20 19:30:15 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 19:30:15 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:03:25
+	Energy:	0.126347 kWh
+	CO2eq:	37.171960 g
+	This is equivalent to:
+	0.308737 km travelled by car
+2022-04-20 19:30:15 - CarbonTracker: Finished monitoring.
+2022-04-20 19:30:58 - CarbonTracker: The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 19:32:31 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 19:32:31 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:09
+	Energy:	0.054652 kWh
+	CO2eq:	16.078909 g
+	This is equivalent to:
+	0.133546 km travelled by car
+2022-04-20 19:32:32 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 19:32:32 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:09
+	Energy:	0.054652 kWh
+	CO2eq:	16.078909 g
+	This is equivalent to:
+	0.133546 km travelled by car
+2022-04-20 19:32:32 - CarbonTracker: Finished monitoring.

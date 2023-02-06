@@ -1,0 +1,7 @@
+pandas==1.4.3
+paramiko==2.12.0
+pymongo==4.3.3
+python_grid5000==1.2.4
+pytz==2022.1
+requests==2.25.1
+scp==0.14.4

@@ -1,0 +1,5 @@
+2022-04-20 23:56:58,749 - CarbonIntensityThread - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/carbontracker/emissions/intensity/intensity.py", line 51, in carbon_intensity
+    "Failed to retrieve location based on IP.")
+carbontracker.exceptions.IPLocationError: Failed to retrieve location based on IP.
+

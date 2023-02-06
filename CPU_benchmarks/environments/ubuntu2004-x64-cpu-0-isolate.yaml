@@ -1,0 +1,25 @@
+---
+name: ubuntu2004-x64-cpu-0-isolate
+version: 2022010422
+arch: x86_64
+alias: ubuntu2004-mini-isolate-cpu-0
+description: ubuntu 20.04 (focal) for x64 - min wit CPU 0 isolated from the kernel scheduler
+author: vladimir.ostapenco@inria.fr
+visibility: private
+destructive: false
+os: linux
+image:
+  file: server:///grid5000/images/ubuntu2004-x64-min-2022010420.tar.zst
+  kind: tar
+  compression: zstd
+postinstalls:
+- archive: server:///grid5000/postinstalls/g5k-postinstall.tgz
+  compression: gzip
+  script: g5k-postinstall --net netplan --disk-aliases
+boot:
+  kernel: "/boot/vmlinuz"
+  initrd: "/boot/initrd.img"
+  kernel_params: 'isolcpus=0 systemd.unified_cgroup_hierarchy=false systemd.legacy_systemd_cgroup_controller=true'
+filesystem: ext4
+partition_type: 131
+multipart: false

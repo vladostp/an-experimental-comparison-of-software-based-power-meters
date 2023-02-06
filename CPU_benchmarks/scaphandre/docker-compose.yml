@@ -1,0 +1,27 @@
+version: "3.4"
+services:
+  prometheus:
+    image: prom/prometheus
+    restart: unless-stopped
+    volumes:
+      - prometheus:/prometheus
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - scaphandre
+  grafana:
+    image: grafana/grafana
+    restart: unless-stopped
+    volumes:
+      - ./grafana/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
+      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yml
+      - ./grafana/sample-dashboard.json:/var/lib/grafana/dashboards/sample-dashboard.json
+    ports:
+      - "3000:3000"
+    networks:
+      - scaphandre
+networks:
+  scaphandre:
+volumes:
+  prometheus:

@@ -1,0 +1,36 @@
+2022-11-07 23:29:22 - CarbonTracker: The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-07 23:30:21 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-07 23:30:21 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:29
+	Energy:	0.002265 kWh
+	CO2eq:	0.666507 g
+	This is equivalent to:
+	0.005536 km travelled by car
+2022-11-07 23:30:22 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-07 23:30:22 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:29
+	Energy:	0.002265 kWh
+	CO2eq:	0.666507 g
+	This is equivalent to:
+	0.005536 km travelled by car
+2022-11-07 23:30:22 - CarbonTracker: Finished monitoring.
+2022-11-07 23:30:52 - CarbonTracker: The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-07 23:32:11 - CarbonTracker: Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-07 23:32:11 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:49
+	Energy:	0.003703 kWh
+	CO2eq:	1.089571 g
+	This is equivalent to:
+	0.009050 km travelled by car
+2022-11-07 23:32:11 - CarbonTracker: Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-07 23:32:11 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:49
+	Energy:	0.003703 kWh
+	CO2eq:	1.089571 g
+	This is equivalent to:
+	0.009050 km travelled by car
+2022-11-07 23:32:11 - CarbonTracker: Finished monitoring.

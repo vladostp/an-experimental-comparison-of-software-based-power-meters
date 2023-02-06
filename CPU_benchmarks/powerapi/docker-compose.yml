@@ -1,0 +1,38 @@
+version: "3.4"
+services:
+  mongodb:
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - mongodb:/data/db
+      - mongoconfigdb:/data/configdb
+    ports:
+      - "27017:27017"
+    networks:
+      - powerapi
+  mongodb-express:
+    image: mongo-express
+    restart: unless-stopped
+    networks:
+      - powerapi
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+  smartwatts:
+    image: vladost/smartwatts:VERSION
+    restart: unless-stopped
+    volumes:
+      - ./smartwatts_config.json:/config_file.json
+    command: ["--config-file", "/config_file.json"]
+    networks:
+      - powerapi
+    depends_on:
+      - mongodb
+
+networks:
+  powerapi:
+
+volumes:
+  mongodb:
+  mongoconfigdb:

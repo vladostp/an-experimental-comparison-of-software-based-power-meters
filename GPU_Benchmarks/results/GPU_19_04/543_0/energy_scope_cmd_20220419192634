@@ -1,0 +1,3 @@
+energy_scope_tags es_appli_total start  2022/04/19T19:26:44
+energy_scope_tags es_appli_total stop  2022/04/19T20:15:27
+energy_scope_cmd  /root/energy-consumption-of-gpu-benchmarks//results/night_exp_19_04/543_0//gpu0/scripts/script_final.sh

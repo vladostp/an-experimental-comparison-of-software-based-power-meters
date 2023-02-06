@@ -1,0 +1,13 @@
+[Unit]
+Description=Scaphandre CPU 0
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/taskset 0x1 /opt/scaphandre prometheus
+
+[Install]
+WantedBy=multi-user.target

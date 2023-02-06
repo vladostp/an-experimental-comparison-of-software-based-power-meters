@@ -1,0 +1,281 @@
+
+This is app 'energy-scope' run with:
+ - parameters: n
+ - input files: energy_scope_20220419193220.tar.gz
+
+
+We can iterate on input files:
+energy_scope: processing: energy_scope_20220419193220.tar.gz
+energy_scope: information: regular mode
+es_config.json
+energy_scope_20220419193220.log
+energy_scope_cmd_20220419193220
+energy_scope_einfo_20220419193220.txt
+energy_scope_enode_20220419193220_gemini-1.txt
+es_discover_result_20220419193220_gemini-1.txt
+es_read_rt_result_20220419193220_gemini-1.txt
+energy_scope: information: enodes already generated
+energy_scope: warning: mpi information NOT found
+energy_scope: tags information found and inserted
+es: tags: file energy_scope_tmp_from_appli_.txt does not exist, we create it
+es: tags: writing result to energy_scope_tmp_from_appli_.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-gz45kl7h because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es: warning: temporal hole detected for node <gemini-1> timestamp <186180>(2723 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <189422>(7619 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <197041>(4570 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <201611>(3923 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <205534>(3106 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <209825>(2809 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <213266>(7749 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <221015>(3865 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <225460>(8484 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <233944>(3007 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <236951>(24909 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <262424>(10371 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <276263>(3745 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <280008>(4221 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <284229>(14038 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <298267>(2991 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <301804>(8335 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <310139>(2848 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <312987>(3717 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <316704>(2883 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <319587>(10554 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <330141>(4437 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <334578>(21839 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <356417>(13988 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <370405>(4575 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <374980>(36922 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <411902>(77470 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <489372>(24370 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <513742>(5113 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <518855>(56492 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <575347>(50218 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <625565>(37578 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <663143>(15136 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <678279>(17250 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <695529>(22287 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <717816>(6037 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <723853>(12597 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <736450>(2575 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <739025>(74295 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <813320>(20487 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <833807>(10115 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <843922>(22920 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <866842>(14331 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <881173>(20683 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <903841>(21049 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <924890>(11859 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <937448>(21228 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <958676>(14218 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <972894>(22020 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <994914>(4120 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <999034>(26607 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1025641>(4421 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1030730>(11785 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1042515>(6855 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1049370>(4055 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1053425>(3183 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1056608>(8104 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1064712>(54313 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1119025>(15711 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1134736>(24837 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1159573>(5724 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1165297>(3846 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1169143>(21643 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1233504>(35303 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1268807>(8731 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1280435>(2574 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1286915>(6167 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1295341>(6179 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1305392>(13782 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1320162>(10194 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1332218>(6640 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1343923>(8967 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1358181>(29093 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1402730>(19194 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1588052>(3307 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1591359>(3353 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1594712>(2903 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1832789>(2559 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1853968>(2532 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1870902>(2740 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1875100>(2655 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1899078>(3054 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1902132>(3175 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1905307>(2770 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1908077>(2718 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1910795>(2914 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1913709>(3161 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1916870>(3219 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1920089>(3031 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1923120>(3192 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1926312>(3248 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1929560>(2860 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1934756>(2565 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1948807>(2549 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1959183>(2700 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <1974499>(3034 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2086565>(2700 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2091568>(4254 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2095822>(6679 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2106379>(3278 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2111664>(2676 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2114340>(2962 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2117302>(3116 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2120418>(3060 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2123478>(2893 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2126371>(3493 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2129864>(2874 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2132738>(2803 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2135541>(3132 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2138673>(5561 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2146451>(2665 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2149116>(3423 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2152539>(3685 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2157929>(2862 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2160791>(3774 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2164565>(3556 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2168121>(2745 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2170866>(2914 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2176093>(2561 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2178654>(3870 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2182524>(3061 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2185585>(2886 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2188471>(3637 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2194384>(4096 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2198480>(2966 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2201446>(2866 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2204312>(3460 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2207772>(2829 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2210601>(3116 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2213717>(3103 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2216820>(3192 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2224533>(2991 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2227524>(3944 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2231468>(3098 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2234566>(3040 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2237606>(3663 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2241269>(2777 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2244046>(3561 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2249867>(2762 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2252629>(2588 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2255217>(2837 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2258054>(3707 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2261761>(3617 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2265378>(2865 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2270243>(2636 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2272879>(2947 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2275826>(2602 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2278428>(2551 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2280979>(3616 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2284595>(4219 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2295915>(2979 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2298894>(2623 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2301517>(2665 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2304182>(2964 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2307146>(2828 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2391120>(2587 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2393707>(2603 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2397986>(2981 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2400967>(2711 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2403678>(3184 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2406862>(3242 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2410104>(3356 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2413460>(3723 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2417183>(3225 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2422900>(3117 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2428490>(2566 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2433435>(3336 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2441659>(2871 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2444530>(3295 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2447825>(2596 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2450421>(2534 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2455412>(2918 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2458330>(3005 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2461335>(3138 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2464473>(2798 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2467271>(2810 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2470081>(3141 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2473222>(2508 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2475730>(2852 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2478582>(3604 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2482186>(3248 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2485434>(3164 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2488598>(2510 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2491108>(3927 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2495035>(2727 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2497762>(2685 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2500447>(3012 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2505922>(2845 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2508767>(3297 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2514462>(2713 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2517175>(2525 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2519700>(3380 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2523080>(2830 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2525910>(2690 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2528600>(2782 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2533768>(3028 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2536796>(2720 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2539516>(2728 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2542244>(2819 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2545063>(2676 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2555081>(2596 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2557677>(2700 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2582396>(3245 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2589490>(3492 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2595266>(2520 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2602356>(2691 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2607423>(2604 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2612363>(2728 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2615091>(2636 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2617727>(2588 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2622595>(2812 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2634252>(2572 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2761296>(3336 ms)
+es: warning: temporal hole detected for node <gemini-1> timestamp <2893088>(2884 ms)
+es: enode2e: writing eprofile to energy_scope_eprofile_20220419193220.txt
+es: enode2e: writing estat to energy_scope_estat_20220419193220.txt
+es: info: estimate: overwriting estat to energy_scope_estat_20220419193220.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-wbckcyic because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es_video: information: <10> etotal filled
+es plot : writing result to energy_scope_plot_20220419193220_global.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-0.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-1.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-0.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-1.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-2.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-3.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-4.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-5.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-6.png
+ es_video: info: saving image: ./image_08078.png
+es plot : writing result to energy_scope_plot_20220419193220_gemini-1-gpu-nvidia-7.png
+ es_video: info: saving image: ./image_08078.png
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata.
+  Falling back to 'report'
+Loading pages (1/6)
+[>                                                           ] 0%[======>                                                     ] 10%[======>                                                     ] 11%[=============>                                              ] 22%[=================>                                          ] 29%[===================>                                        ] 33%[=======================>                                    ] 39%[=========================>                                  ] 43%[===========================>                                ] 46%[=============================>                              ] 49%[============================================================] 100%Counting pages (2/6)                                               
+[============================================================] Object 1 of 1Resolving links (4/6)                                                       
+[============================================================] Object 1 of 1Loading headers and footers (5/6)                                           
+Printing pages (6/6)
+[>                                                           ] Preparing[======>                                                     ] Page 1 of 9[=============>                                              ] Page 2 of 9[===================>                                        ] Page 3 of 9[==========================>                                 ] Page 4 of 9[=================================>                          ] Page 5 of 9[=======================================>                    ] Page 6 of 9[==============================================>             ] Page 7 of 9[====================================================>       ] Page 8 of 9[============================================================] Page 9 of 9Done                                                                      
+energy_scope: information: clean up
+The workdir now contains:
+total 14076
+-rw-r--r-- 1 500 500    23544 Apr 19 18:40 allgo.log
+-rw-r--r-- 1 500 500  1064804 Apr 19 18:39 energy_scope_20220419193220.tar.gz
+-rw-r--r-- 1 500 500 12539196 Apr 19 18:40 energy_scope_eprofile_20220419193220.txt
+-rw-r--r-- 1 500 500     9475 Apr 19 18:40 energy_scope_estat_20220419193220.txt
+-rw-r--r-- 1 500 500   767630 Apr 19 18:40 report.pdf
+
+====  ALLGO JOB SUCCESS  ====

@@ -1,0 +1,10 @@
+rdmsr: CPU 0 cannot read MSR 0x00000770
+rdmsr: CPU 0 cannot read MSR 0x00000771
+rdmsr: CPU 0 cannot read MSR 0x00000774
+es: method to access MSR is <rdmsr>
+es: info: read MSR failed for address (discarded): 0x770
+es: info: read MSR failed for address (discarded): 0x771
+es: info: read MSR failed for address (discarded): 0x774
+es: rdmsr method: close_msr: nothing to do
+es: writing result to /root/energy-consumption-of-gpu-benchmarks//results/night_exp_19_04/124_0//es_discover_result_20220419193259_gemini-1.txt
+rdmsr: CPU 0 cannot read MSR 0x00000641

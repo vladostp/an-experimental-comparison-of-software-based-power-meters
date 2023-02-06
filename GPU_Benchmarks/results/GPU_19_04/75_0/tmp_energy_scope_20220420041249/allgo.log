@@ -1,0 +1,67 @@
+
+This is app 'energy-scope' run with:
+ - parameters: n
+ - input files: energy_scope_20220420041249.tar.gz
+
+
+We can iterate on input files:
+energy_scope: processing: energy_scope_20220420041249.tar.gz
+energy_scope: information: regular mode
+es_config.json
+energy_scope_20220420041249.log
+energy_scope_cmd_20220420041249
+energy_scope_einfo_20220420041249.txt
+energy_scope_enode_20220420041249_gemini-1.txt
+es_discover_result_20220420041249_gemini-1.txt
+es_read_rt_result_20220420041249_gemini-1.txt
+energy_scope: information: enodes already generated
+energy_scope: warning: mpi information NOT found
+energy_scope: tags information found and inserted
+es: tags: file energy_scope_tmp_from_appli_.txt does not exist, we create it
+es: tags: writing result to energy_scope_tmp_from_appli_.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ms9sctjz because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es: enode2e: writing eprofile to energy_scope_eprofile_20220420041249.txt
+es: enode2e: writing estat to energy_scope_estat_20220420041249.txt
+es: info: estimate: overwriting estat to energy_scope_estat_20220420041249.txt
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-odha2v36 because the default path (/nonexistent/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+es_video: information: <10> etotal filled
+es plot : writing result to energy_scope_plot_20220420041249_global.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-0.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-1.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-0.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-1.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-2.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-3.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-4.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-5.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-6.png
+ es_video: info: saving image: ./image_01526.png
+es plot : writing result to energy_scope_plot_20220420041249_gemini-1-gpu-nvidia-7.png
+ es_video: info: saving image: ./image_01526.png
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata.
+  Falling back to 'report'
+Loading pages (1/6)
+[>                                                           ] 0%[======>                                                     ] 10%[======>                                                     ] 11%[=============>                                              ] 22%[==================>                                         ] 30%[====================>                                       ] 34%[=======================>                                    ] 39%[=========================>                                  ] 43%[===========================>                                ] 45%[============================>                               ] 48%[============================================================] 100%Counting pages (2/6)                                               
+[============================================================] Object 1 of 1Resolving links (4/6)                                                       
+[============================================================] Object 1 of 1Loading headers and footers (5/6)                                           
+Printing pages (6/6)
+[>                                                           ] Preparing[======>                                                     ] Page 1 of 9[=============>                                              ] Page 2 of 9[===================>                                        ] Page 3 of 9[==========================>                                 ] Page 4 of 9[=================================>                          ] Page 5 of 9[=======================================>                    ] Page 6 of 9[==============================================>             ] Page 7 of 9[====================================================>       ] Page 8 of 9[============================================================] Page 9 of 9Done                                                                      
+energy_scope: information: clean up
+The workdir now contains:
+total 3668
+-rw-r--r-- 1 500 500    5367 Apr 20 02:26 allgo.log
+-rw-r--r-- 1 500 500  545174 Apr 20 02:25 energy_scope_20220420041249.tar.gz
+-rw-r--r-- 1 500 500 2375774 Apr 20 02:26 energy_scope_eprofile_20220420041249.txt
+-rw-r--r-- 1 500 500    9448 Apr 20 02:26 energy_scope_estat_20220420041249.txt
+-rw-r--r-- 1 500 500  803704 Apr 20 02:26 report.pdf
+
+====  ALLGO JOB SUCCESS  ====

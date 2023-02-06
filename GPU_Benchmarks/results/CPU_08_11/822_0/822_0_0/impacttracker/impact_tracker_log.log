@@ -1,0 +1,10 @@
+2022-11-08 03:53:46,523 - experiment_impact_tracker.compute_tracker.ImpactTracker - ERROR - Encountered exception within power monitor thread!
+2022-11-08 03:53:46,524 - experiment_impact_tracker.compute_tracker.ImpactTracker - ERROR -   File "/usr/local/lib/python3.7/dist-packages/experiment_impact_tracker/compute_tracker.py", line 161, in launch_power_monitor
+    _sample_and_log_power(log_dir, initial_info, logger=logger)
+  File "/usr/local/lib/python3.7/dist-packages/experiment_impact_tracker/compute_tracker.py", line 112, in _sample_and_log_power
+    log_dir=log_dir,
+  File "/usr/local/lib/python3.7/dist-packages/experiment_impact_tracker/cpu/intel.py", line 88, in get_intel_power
+    return get_rapl_power(pid_list, logger, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/experiment_impact_tracker/cpu/intel.py", line 457, in get_rapl_power
+    attributable_compute = cpu_util_process / cpu_util_system
+

@@ -1,0 +1,13 @@
+2022-04-20 18:51:43 - carbontracker version 1.1.6
+2022-04-20 18:51:43 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-04-20 18:51:55 - The following components were found: GPU with device(s) Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB, Tesla V100-SXM2-32GB. CPU with device(s) cpu:1, cpu:0.
+2022-04-20 18:51:55 - Monitoring thread started.
+2022-04-20 18:53:29 - Epoch 1:
+2022-04-20 18:53:29 - Duration: 0:01:08.82
+2022-04-20 18:53:29 - Average power usage (W) for gpu: [203.775      209.42185714 204.47771429 206.06628571 208.42571429
+ 207.19614286 204.25157143 204.54385714]
+2022-04-20 18:53:29 - Average power usage (W) for cpu: [73.50200029 75.87611357]
+2022-04-20 18:53:30 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Paris, Île-de-France, FR: [294.2060978]
+2022-04-20 18:53:30 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Paris, Île-de-France, FR.
+2022-04-20 18:53:30 - Live carbon intensity could not be fetched at detected location: Paris, Île-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-04-20 18:53:30 - Monitoring thread ended.

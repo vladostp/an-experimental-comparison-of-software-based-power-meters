@@ -1,0 +1,11 @@
+2022-11-07 23:56:35 - carbontracker version 1.1.6
+2022-11-07 23:56:35 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-07 23:56:35 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-07 23:56:35 - Monitoring thread started.
+2022-11-07 23:57:55 - Epoch 1:
+2022-11-07 23:57:55 - Duration: 0:00:49.16
+2022-11-07 23:57:55 - Average power usage (W) for cpu: [83.2656318 87.2056726]
+2022-11-07 23:57:55 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-07 23:57:55 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-07 23:57:55 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-07 23:57:55 - Monitoring thread ended.

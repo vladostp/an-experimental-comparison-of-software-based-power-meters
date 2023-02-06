@@ -1,0 +1,65 @@
+{
+    "parameter": {
+        "comment":"this file can be modified, but any mistake will block the tool",
+        "version":"2022-01",
+        "owner":"energy_scope",
+        "cpu_info":"/proc/cpuinfo",
+        "nvidia_gpu_info":"/proc/driver/nvidia/gpus",
+        "stop_file_prefix":"/tmp/es_read_rt_stop_flag_",
+        "synchro_file_saved_prefix":"wrk/energy_scope_tmp_file_",
+        "synchro_started_prefix":"wrk/energy_scope_tmp_started_",
+        "msr_cmd":"rdmsr",
+        "opt_enode":"node",
+        "opt_estat":"none",
+        "opt_eprofile":"none",
+        "opt_esend":"none",
+        "analyseafteracquisition":"no",
+        "eprofile_period(ms)":500,
+        "default_read_rt_profile":"et"
+    },
+    "data": {
+        "intel": {
+            "generic" : {
+                "read_rt_idle_time":0.49,
+                "registers": {
+                    "0x010": {"when":"ae", "pct":"package"},
+                    "0x0ce": {"when":"b", "pct":"package"},
+                    "0x0e7": {"when":"N", "pct":"thread"},
+                    "0x0e8": {"when":"a", "pct":"thread"},
+                    "0x198": {"when":"N", "pct":"core"},
+                    "0x19c": {"when":"at", "pct":"core"},
+                    "0x1A2": {"when":"b", "pct":"package"},
+                    "0x606": {"when":"b", "pct":"package"},
+                    "0x610": {"when":"b", "pct":"package"},
+                    "0x611": {"when":"ae", "pct":"package"},
+                    "0x613": {"when":"a", "pct":"package"},
+                    "0x614": {"when":"b", "pct":"package"},
+                    "0x619": {"when":"ae", "pct":"package"},
+                    "0x620": {"when":"b", "pct":"package"},
+                    "0x621": {"when":"a", "pct":"package"},
+                    "0x639": {"when":"ae", "pct":"package"},
+                    "0x641": {"when":"ae", "pct":"package"},
+                    "0x64e": {"when":"a", "pct":"thread"},
+                    "0x770": {"when":"b", "pct":"package"},
+                    "0x771": {"when":"b", "pct":"thread"},
+                    "0x774": {"when":"b", "pct":"thread"}
+                }
+            }
+        },
+        "amd":{
+            "generic" : {
+                "read_rt_idle_time":0.49,
+                "registers": {
+                    "0x010": {"when":"ae", "pct":"package"},
+                    "0x0e7": {"when":"a", "pct":"thread"},
+                    "0x0e8": {"when":"a", "pct":"thread"},
+                    "0xC0000104": {"when":"b", "pct":"thread"},
+                    "0xC0010064": {"when":"b", "pct":"core"},
+                    "0xC0010299": {"when":"b", "pct":"package"},
+                    "0xC001029A": {"when":"a", "pct":"core"},
+                    "0xC001029B": {"when":"ae", "pct":"package"}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2022/04/20 20:24:53",
+  "from_appli": {
+    "jobid": "20220420201214",
+    "user": "",
+    "command": "/root/energy-consumption-of-gpu-benchmarks//results/night_exp_20_04/483_0//gpu0/scripts/script_final.sh",
+    "comment": "",
+    "tags": {
+      "es_appli_total": {
+        "start": "2022/04/20 20:12:24.000000",
+        "stop": "2022/04/20 20:24:37.000000"
+      }
+    }
+  },
+  "arch": {
+    "data": {
+      "joule(J)": {
+        "etotal(J)": 710924,
+        "ecpu(J)": 690773,
+        "edram(J)": 20151,
+        "etotal(%)": 100.0
+      }
+    },
+    "arch": {
+      "gemini-1": {
+        "data": {
+          "joule(J)": {
+            "etotal(J)": 710924,
+            "ecpu(J)": 690773,
+            "edram(J)": 20151,
+            "etotal(%)": 100.0
+          }
+        },
+        "arch": {
+          "0": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 64913,
+                "ecpu(J)": 55025,
+                "edram(J)": 9888,
+                "etotal(%)": 9.13
+              }
+            }
+          },
+          "1": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 63111,
+                "ecpu(J)": 52848,
+                "edram(J)": 10263,
+                "etotal(%)": 8.88
+              }
+            }
+          },
+          "gpu-nvidia-0": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 71396,
+                "ecpu(J)": 71396,
+                "edram(J)": 0,
+                "etotal(%)": 10.04
+              }
+            }
+          },
+          "gpu-nvidia-1": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 73662,
+                "ecpu(J)": 73662,
+                "edram(J)": 0,
+                "etotal(%)": 10.36
+              }
+            }
+          },
+          "gpu-nvidia-2": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 72448,
+                "ecpu(J)": 72448,
+                "edram(J)": 0,
+                "etotal(%)": 10.19
+              }
+            }
+          },
+          "gpu-nvidia-3": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 72989,
+                "ecpu(J)": 72989,
+                "edram(J)": 0,
+                "etotal(%)": 10.27
+              }
+            }
+          },
+          "gpu-nvidia-4": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 73575,
+                "ecpu(J)": 73575,
+                "edram(J)": 0,
+                "etotal(%)": 10.35
+              }
+            }
+          },
+          "gpu-nvidia-5": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 72951,
+                "ecpu(J)": 72951,
+                "edram(J)": 0,
+                "etotal(%)": 10.26
+              }
+            }
+          },
+          "gpu-nvidia-6": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 73519,
+                "ecpu(J)": 73519,
+                "edram(J)": 0,
+                "etotal(%)": 10.34
+              }
+            }
+          },
+          "gpu-nvidia-7": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 72360,
+                "ecpu(J)": 72360,
+                "edram(J)": 0,
+                "etotal(%)": 10.18
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

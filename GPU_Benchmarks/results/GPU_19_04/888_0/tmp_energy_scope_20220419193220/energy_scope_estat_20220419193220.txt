@@ -1,0 +1,390 @@
+{
+  "date": "2022/04/19 18:39:52",
+  "pgm": "energy_scope@inria",
+  "duration(sec)": 4039,
+  "from_appli": {
+    "jobid": "20220419193220",
+    "user": "",
+    "command": "/root/energy-consumption-of-gpu-benchmarks//results/night_exp_19_04/888_0//gpu0/scripts/script_final.sh",
+    "comment": ""
+  },
+  "arch": {
+    "data": {
+      "total": {
+        "node": 1,
+        "phy": 2,
+        "core": 40,
+        "gpu": 8
+      },
+      "node_list": [
+        "gemini-1"
+      ],
+      "joule(J)": {
+        "etotal(J)": 5393017,
+        "ecpu(J)": 5279958,
+        "edram(J)": 113059,
+        "etotal(%)": 100.0
+      },
+      "energy_est": {
+        "etotal(J)": 7250957,
+        "etotal(kWh)": 2.014,
+        "model": "joule_model_202203"
+      },
+      "carbon": {
+        "country": "FR",
+        "carbon(gCO2)": 102.915,
+        "model": "carbon_model_202203"
+      }
+    },
+    "arch": {
+      "gemini-1": {
+        "data": {
+          "acquisition(ms)": {
+            "min": 515.0,
+            "max": 77470.0,
+            "mean": 1435.053
+          },
+          "power(W)": {
+            "min": 133.741,
+            "max": 30924.771,
+            "mean": 1462.254
+          }
+        },
+        "arch": {
+          "0": {
+            "arch": {
+              "0": {
+                "arch": {},
+                "data": {}
+              },
+              "1": {
+                "arch": {},
+                "data": {}
+              },
+              "2": {
+                "arch": {},
+                "data": {}
+              },
+              "3": {
+                "arch": {},
+                "data": {}
+              },
+              "4": {
+                "arch": {},
+                "data": {}
+              },
+              "5": {
+                "arch": {},
+                "data": {}
+              },
+              "6": {
+                "arch": {},
+                "data": {}
+              },
+              "7": {
+                "arch": {},
+                "data": {}
+              },
+              "8": {
+                "arch": {},
+                "data": {}
+              },
+              "9": {
+                "arch": {},
+                "data": {}
+              },
+              "10": {
+                "arch": {},
+                "data": {}
+              },
+              "11": {
+                "arch": {},
+                "data": {}
+              },
+              "12": {
+                "arch": {},
+                "data": {}
+              },
+              "13": {
+                "arch": {},
+                "data": {}
+              },
+              "14": {
+                "arch": {},
+                "data": {}
+              },
+              "15": {
+                "arch": {},
+                "data": {}
+              },
+              "16": {
+                "arch": {},
+                "data": {}
+              },
+              "17": {
+                "arch": {},
+                "data": {}
+              },
+              "18": {
+                "arch": {},
+                "data": {}
+              },
+              "19": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Intel(R)Xeon(R)CPUE5-2698v4@2.20GHz",
+              "core": 20,
+              "joule(J)": {
+                "etotal(J)": 398935,
+                "ecpu(J)": 343574,
+                "edram(J)": 55361,
+                "etotal(%)": 7.4
+              }
+            }
+          },
+          "1": {
+            "arch": {
+              "20": {
+                "arch": {},
+                "data": {}
+              },
+              "21": {
+                "arch": {},
+                "data": {}
+              },
+              "22": {
+                "arch": {},
+                "data": {}
+              },
+              "23": {
+                "arch": {},
+                "data": {}
+              },
+              "24": {
+                "arch": {},
+                "data": {}
+              },
+              "25": {
+                "arch": {},
+                "data": {}
+              },
+              "26": {
+                "arch": {},
+                "data": {}
+              },
+              "27": {
+                "arch": {},
+                "data": {}
+              },
+              "28": {
+                "arch": {},
+                "data": {}
+              },
+              "29": {
+                "arch": {},
+                "data": {}
+              },
+              "30": {
+                "arch": {},
+                "data": {}
+              },
+              "31": {
+                "arch": {},
+                "data": {}
+              },
+              "32": {
+                "arch": {},
+                "data": {}
+              },
+              "33": {
+                "arch": {},
+                "data": {}
+              },
+              "34": {
+                "arch": {},
+                "data": {}
+              },
+              "35": {
+                "arch": {},
+                "data": {}
+              },
+              "36": {
+                "arch": {},
+                "data": {}
+              },
+              "37": {
+                "arch": {},
+                "data": {}
+              },
+              "38": {
+                "arch": {},
+                "data": {}
+              },
+              "39": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Intel(R)Xeon(R)CPUE5-2698v4@2.20GHz",
+              "core": 20,
+              "joule(J)": {
+                "etotal(J)": 385764,
+                "ecpu(J)": 328066,
+                "edram(J)": 57698,
+                "etotal(%)": 7.15
+              }
+            }
+          },
+          "gpu-nvidia-0": {
+            "arch": {
+              "1000": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 535728,
+                "ecpu(J)": 535728,
+                "edram(J)": 0,
+                "etotal(%)": 9.93
+              }
+            }
+          },
+          "gpu-nvidia-1": {
+            "arch": {
+              "1001": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 554587,
+                "ecpu(J)": 554587,
+                "edram(J)": 0,
+                "etotal(%)": 10.28
+              }
+            }
+          },
+          "gpu-nvidia-2": {
+            "arch": {
+              "1002": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 498820,
+                "ecpu(J)": 498820,
+                "edram(J)": 0,
+                "etotal(%)": 9.25
+              }
+            }
+          },
+          "gpu-nvidia-3": {
+            "arch": {
+              "1003": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 647205,
+                "ecpu(J)": 647205,
+                "edram(J)": 0,
+                "etotal(%)": 12.0
+              }
+            }
+          },
+          "gpu-nvidia-4": {
+            "arch": {
+              "1004": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 534301,
+                "ecpu(J)": 534301,
+                "edram(J)": 0,
+                "etotal(%)": 9.91
+              }
+            }
+          },
+          "gpu-nvidia-5": {
+            "arch": {
+              "1005": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 547568,
+                "ecpu(J)": 547568,
+                "edram(J)": 0,
+                "etotal(%)": 10.15
+              }
+            }
+          },
+          "gpu-nvidia-6": {
+            "arch": {
+              "1006": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 643413,
+                "ecpu(J)": 643413,
+                "edram(J)": 0,
+                "etotal(%)": 11.93
+              }
+            }
+          },
+          "gpu-nvidia-7": {
+            "arch": {
+              "1007": {
+                "arch": {},
+                "data": {}
+              }
+            },
+            "data": {
+              "modelname": "Tesla V100-SXM2-32GB",
+              "core": 1,
+              "joule(J)": {
+                "etotal(J)": 646696,
+                "ecpu(J)": 646696,
+                "edram(J)": 0,
+                "etotal(%)": 11.99
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+.nfs*
+OAR*
+__pycache__/
+energy_scope/

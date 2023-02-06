@@ -1,0 +1,59 @@
+{
+  "date": "2022/11/07 19:54:21",
+  "from_appli": {
+    "jobid": "20221107194550",
+    "user": "",
+    "command": "/root/energy-consumption-of-gpu-benchmarks//results/night_exp_08_11/426_0//gpu0/scripts/script_final.sh",
+    "comment": "",
+    "tags": {
+      "es_appli_total": {
+        "start": "2022/11/07 19:45:53.000000",
+        "stop": "2022/11/07 19:54:03.000000"
+      }
+    }
+  },
+  "arch": {
+    "data": {
+      "joule(J)": {
+        "etotal(J)": 92187,
+        "ecpu(J)": 75831,
+        "edram(J)": 16356,
+        "etotal(%)": 100.0
+      }
+    },
+    "arch": {
+      "gemini-1": {
+        "data": {
+          "joule(J)": {
+            "etotal(J)": 92187,
+            "ecpu(J)": 75831,
+            "edram(J)": 16356,
+            "etotal(%)": 100.0
+          }
+        },
+        "arch": {
+          "0": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 46617,
+                "ecpu(J)": 38553,
+                "edram(J)": 8064,
+                "etotal(%)": 50.57
+              }
+            }
+          },
+          "1": {
+            "data": {
+              "joule(J)": {
+                "etotal(J)": 45570,
+                "ecpu(J)": 37278,
+                "edram(J)": 8292,
+                "etotal(%)": 49.43
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

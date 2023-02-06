@@ -1,0 +1,22 @@
+2022-11-08 02:29:46 - carbontracker version 1.1.6
+2022-11-08 02:29:46 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 02:29:46 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 02:29:46 - Monitoring thread started.
+2022-11-08 02:30:46 - Epoch 1:
+2022-11-08 02:30:46 - Duration: 0:00:29.66
+2022-11-08 02:30:46 - Average power usage (W) for cpu: [88.06876467 91.025483  ]
+2022-11-08 02:30:46 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:30:46 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:30:46 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:30:46 - Monitoring thread ended.
+2022-11-08 02:31:16 - carbontracker version 1.1.6
+2022-11-08 02:31:16 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 02:31:16 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 02:31:16 - Monitoring thread started.
+2022-11-08 02:32:36 - Epoch 1:
+2022-11-08 02:32:36 - Duration: 0:00:49.16
+2022-11-08 02:32:36 - Average power usage (W) for cpu: [83.9638476 86.5644634]
+2022-11-08 02:32:36 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:32:36 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:32:36 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:32:36 - Monitoring thread ended.

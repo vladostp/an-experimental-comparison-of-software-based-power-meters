@@ -1,0 +1,44 @@
+2022-11-08 01:59:04 - carbontracker version 1.1.6
+2022-11-08 01:59:04 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 01:59:04 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 01:59:04 - Monitoring thread started.
+2022-11-08 02:00:34 - Epoch 1:
+2022-11-08 02:00:34 - Duration: 0:01:00.07
+2022-11-08 02:00:34 - Average power usage (W) for cpu: [69.364009  70.8715225]
+2022-11-08 02:00:34 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:00:34 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:00:35 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:00:35 - Monitoring thread ended.
+2022-11-08 02:01:05 - carbontracker version 1.1.6
+2022-11-08 02:01:05 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 02:01:05 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 02:01:05 - Monitoring thread started.
+2022-11-08 02:03:27 - Epoch 1:
+2022-11-08 02:03:27 - Duration: 0:01:52.58
+2022-11-08 02:03:27 - Average power usage (W) for cpu: [86.03833173 89.35348673]
+2022-11-08 02:03:27 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:03:27 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:03:28 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:03:28 - Monitoring thread ended.
+2022-11-08 02:03:58 - carbontracker version 1.1.6
+2022-11-08 02:03:58 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 02:03:58 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 02:03:58 - Monitoring thread started.
+2022-11-08 02:04:57 - Epoch 1:
+2022-11-08 02:04:57 - Duration: 0:00:28.96
+2022-11-08 02:04:57 - Average power usage (W) for cpu: [88.28488967 90.56259333]
+2022-11-08 02:04:57 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:04:57 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:04:57 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:04:57 - Monitoring thread ended.
+2022-11-08 02:05:27 - carbontracker version 1.1.6
+2022-11-08 02:05:27 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.59 (Rhonda Ascierto, 2019, Uptime Institute Global Data Center Survey).
+2022-11-08 02:05:27 - The following components were found: CPU with device(s) cpu:1, cpu:0.
+2022-11-08 02:05:27 - Monitoring thread started.
+2022-11-08 02:06:46 - Epoch 1:
+2022-11-08 02:06:46 - Duration: 0:00:48.97
+2022-11-08 02:06:46 - Average power usage (W) for cpu: [83.9400924 87.1491908]
+2022-11-08 02:06:46 - Carbon intensities (gCO2/kWh) fetched every 900 s at detected location Lille, Hauts-de-France, FR: [294.2060978]
+2022-11-08 02:06:46 - Average carbon intensity during training was 294.21 gCO2/kWh at detected location: Lille, Hauts-de-France, FR.
+2022-11-08 02:06:46 - Live carbon intensity could not be fetched at detected location: Lille, Hauts-de-France, FR. Defaulted to average carbon intensity for EU-28 in 2017 of 294.21 gCO2/kWh.
+2022-11-08 02:06:46 - Monitoring thread ended.
