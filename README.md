@@ -12,13 +12,12 @@ Scripts in Bash are used to compile and execute the benchmarks.
 
 # Replicate experiments
 ## Request access to the Grid'5000 testbed
-To get access to the testbed, one needs to ask for an account using the OpenAccess program. To do so, please fill out the following form: https://www.grid5000.fr/w/Special:G5KRequestAccountUMS?openaccess. 
-Please specify in the "Intended usage" section that this demand is for a conference review. The authors of this work are not maintainers of the testbed and will not have access to your information. 
+To get access to the testbed, one needs to ask for an account at: [https://www.grid5000.fr/w/Grid5000:Get_an_account](https://www.grid5000.fr/w/Grid5000:Get_an_account). 
 Once you have access to the testbed, please follow the first steps described in the [Getting started](https://www.grid5000.fr/w/Getting_Started) tutorial.
 
 ## Compilation and execution environment
-Our framework was tested on the Gemini cluster of the Grid'5000 testbed, as described in the Methodology section.
-To replicate experiments, please follow the steps described in [CPU_benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/CPU_Benchmarks) and [GPU_Benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/GPU_Benchmarks).
+Our framework was tested on the Gemini cluster of the Grid'5000 testbed.
+To start experimenting, please follow the steps described in [CPU_benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/CPU_Benchmarks) and [GPU_Benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/GPU_Benchmarks).
 
 # Outputs
 For each experiment, we gather environment description (duration, number of GPU/CPU, etc.) and energy measurement metrics as reported by selected tools and the power meters (BMC, OmegaWatt). The output of all experiments can be found in the result folders. Its structure is described in the respective readme-files in the Gitlab repository.
