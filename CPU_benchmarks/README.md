@@ -146,6 +146,7 @@ For each experiment, the [./results/](./results/) directory has a different pref
 | two_mg_parallel_execution | 2-solutions-compare-2-parallel-same-ram |
 | three_ep_parallel_execution | 2-solutions-compare-3-parallel-same |
 | ep_lu_parallel_execution | 2-solutions-compare-parallel-different |
+| no_solution_execution | no-solution |
 | perf_total_energy | perf-evaluate |
 | perf_power_profile | perf-power-profile |
 
