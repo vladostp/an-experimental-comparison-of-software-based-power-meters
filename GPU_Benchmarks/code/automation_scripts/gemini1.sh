@@ -27,11 +27,15 @@ ssh root@$node "bash $installation_script"
 ssh root@$node "bash $env_script"
 
 # compile benchmarks
-rsync -avzh NPB-GPU/ root@$node:NPB-GPU/ 
-ssh root@$node "bash $local_git_path/$benchmark_binary_dir/compile_all.sh 8 /root/NPB-GPU/CUDA/ $frontale_git_path/$benchmark_binary_dir/"
+# rsync -avzh NPB-GPU/ root@$node:NPB-GPU/ 
+# ssh root@$node "bash $local_git_path/$benchmark_binary_dir/compile_all.sh 8 /root/NPB-GPU/CUDA/ $frontale_git_path/$benchmark_binary_dir/"
 
-# start experiments. Here it will start one experiment for each benchmark and each available tool.
-
+# start experiments. 
+## Here it will start one experiment
+ssh root@$node "python3 $start_script --git_repo $local_git_path --result_folder $result_path --energy_scope_folder $es_folder --CodeCarbon --benchmark_id 0 --repetitions 1 --benchmark_binary_dir $local_git_path/$benchmark_binary_dir/"
+            
+## Here it will start one experiment for each benchmark and each available tool.   
+: '
 for j in {1..1} # 1 to 10: number of repetitions
 do
     for i in {0..3} # 0 to 3: benchmark id
@@ -39,9 +43,10 @@ do
         for tool in CarbonTrackerTool CodeCarbon ExperimentImpactTracker EnergyScope
         do
             # Launch experiment for one tool, one benchmark, one repetition
-            ssh root@$node "python3.7 $start_script --git_repo $local_git_path --result_folder $result_path --energy_scope_folder $es_folder --$tool --repetitions 1 --benchmark_binary_dir $local_git_path/$benchmark_binary_dir/"
+            ssh root@$node "python3 $start_script --git_repo $local_git_path --result_folder $result_path --energy_scope_folder $es_folder --$tool --benchmark_id $i --repetitions 1 --benchmark_binary_dir $local_git_path/$benchmark_binary_dir/"
             # Get results
             scp -r root@$node:$local_git_path/results/ $frontale_git_path
         done
     done
 done
+'
