@@ -12,7 +12,8 @@ class Benchmark:
                  sleep_before,
                  sleep_after,
                  frequency,
-                 threads):
+                 threads,
+                 result_file=None):
         self.name = name
         self.bench_type = bench_type
         self.bin_info = bin_info
@@ -23,6 +24,7 @@ class Benchmark:
         self.start_time = None
         self.end_time = None
         self.stdout = None
+        self.result_file = result_file
     
     def run(self, user, host):
         # Select launch script depending on benchmark type

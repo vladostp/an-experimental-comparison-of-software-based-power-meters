@@ -1,0 +1,13 @@
+,benchmark,tool,socket,event,value
+0,EP D NAS Benchmark,perf,CPU0,power/energy-ram/,617.47
+1,EP D NAS Benchmark,perf,CPU20,power/energy-ram/,640.37
+2,EP D NAS Benchmark,perf,CPU0,power/energy-pkg/,4210.23
+3,EP D NAS Benchmark,perf,CPU20,power/energy-pkg/,4097.66
+4,LU C NAS Benchmark,perf,CPU0,power/energy-ram/,646.46
+5,LU C NAS Benchmark,perf,CPU20,power/energy-ram/,633.37
+6,LU C NAS Benchmark,perf,CPU0,power/energy-pkg/,2547.1
+7,LU C NAS Benchmark,perf,CPU20,power/energy-pkg/,2447.04
+8,MG D NAS Benchmark,perf,CPU0,power/energy-ram/,3302.64
+9,MG D NAS Benchmark,perf,CPU20,power/energy-ram/,3209.99
+10,MG D NAS Benchmark,perf,CPU0,power/energy-pkg/,11284.25
+11,MG D NAS Benchmark,perf,CPU20,power/energy-pkg/,10864.37

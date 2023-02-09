@@ -22,8 +22,9 @@ def parse_arguments():
                         type=int)
     parser.add_argument('--data_host_jobid',
                         help='Job ID of the host on which the data collection part will be launched.',
-                        required=True,
-                        type=int)
+                        required=False,
+                        type=int,
+                        default=0)
     parser.add_argument('--experiment',
                         help='Experiment to launch. For the description of the experiments, see the documentation.',
                         choices=list(available_experiments.keys()),
@@ -61,7 +62,8 @@ def main():
 
     ## Getting jobs
     job_bench.get_job(args.g5k_site, job_bench_id, 'root')
-    job_data.get_job(args.g5k_site, job_data_id, 'root')
+    if job_data_id != 0:
+        job_data.get_job(args.g5k_site, job_data_id, 'root')
 
     # Launching experiment
     experiment_name = args.experiment

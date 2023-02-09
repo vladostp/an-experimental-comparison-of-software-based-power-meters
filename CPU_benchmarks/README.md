@@ -7,6 +7,7 @@ This repository contains the code for the experiments and the results of the exp
 ## Software-based power meters compared
 - [PowerAPI](https://powerapi-ng.github.io/) with Smartwatts
 - [Scaphandre](https://hubblo-org.github.io/scaphandre-documentation/)
+- [Perf](https://perf.wiki.kernel.org/index.php/Main_Page)
 - Energy Scope (See [Energy Scope](#energy-scope))
 
 ## Directory layout
@@ -113,6 +114,9 @@ It has following parameters:
 | two_mg_parallel_execution | Launches PowerAPI. Executes two MG D benchmarks in parallel. Stops PowerAPI. Launches Scaphandre. Repeats the parallel execution of two MG D benchmarks. Gets the power profiles of PowerAPI, Scaphandre, BMC and external power meter. |
 | three_ep_parallel_execution | Launches PowerAPI. Executes three EP D benchmarks in parallel. Stops PowerAPI. Launches Scaphandre. Repeats the parallel execution of three EP D benchmarks. Gets the power profiles of PowerAPI, Scaphandre, BMC and external power meter.  |
 | ep_lu_parallel_execution | Launches PowerAPI. Executes EP D and LU D benchmarks in parallel. Stops PowerAPI. Launches Scaphandre. Repeats the parallel execution of EP D and LU D benchmarks. Gets the power profiles of PowerAPI, Scaphandre, BMC and external power meter. |
+| no_solution_execution | Executes EP D, LU C and MG D benchmarks with 2 minute wait between benchmarks without launching any software-based power meter. Gets the power profiles of BMC and external power meter. |
+| perf_total_energy | Executes EP D, LU C and MG D benchmarks with Perf with 2 minute wait between benchmarks. Gets total energy consumed per benchmark reported by Perf and the power profiles of BMC and external power meter. |
+| perf_power_profile | Executes EP D, LU C and MG D benchmarks with Perf (with interval print option) with 2 minute wait between benchmarks. Gets power profiles reported by Perf, BMC and external power meter. |
 
 ### Power profiles exepriment launch example
 ```bash
@@ -142,6 +146,8 @@ For each experiment, the [./results/](./results/) directory has a different pref
 | two_mg_parallel_execution | 2-solutions-compare-2-parallel-same-ram |
 | three_ep_parallel_execution | 2-solutions-compare-3-parallel-same |
 | ep_lu_parallel_execution | 2-solutions-compare-parallel-different |
+| perf_total_energy | perf-evaluate |
+| perf_power_profile | perf-power-profile |
 
 Each result directory contains:
 - `experiments.json` file - Contains experiment metadata, description, and runtime logs.

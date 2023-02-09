@@ -148,10 +148,13 @@ def convert_exp_into_benchmark_dataframes(
                 return None
             
             # Filter dataframe
-            df_part = copy.deepcopy(df[(df['timestamp'] > start_time) & (df['timestamp'] < end_time)])
+            if 'timestamp' in df:
+                df_part = copy.deepcopy(df[(df['timestamp'] > start_time) & (df['timestamp'] < end_time)])
+            else: 
+                df_part = df[df['benchmark'] == bench_name]
 
             ## Shifting time to start at timestamp zero
-            if timeshift:
+            if 'timestamp' in df and timeshift:
                 df_part = shift_dataframe_time(df_part, start_time)
 
             # If there is no value for a target on specific timestamp for scaphandre we will fill it with zero
@@ -728,6 +731,55 @@ def create_plottable_df_for_scaphandre(
 
     return result_df
 
+# Add data into result dataframe for a specific target and for specific scopes
+def add_data_by_target_perf(result_df, df, targets, plot_prefix, benchmark_name):
+    
+    # Get entries by scope
+    df_cpu_event = copy.deepcopy(df[df['event'] == 'power/energy-pkg/'])
+    df_dram_event = copy.deepcopy(df[df['event'] == 'power/energy-ram/'])
+
+    # Calculte the total consumption for both scopes
+    df_total = pd.concat((df_cpu_event, df_dram_event)).groupby('timestamp',as_index=False).sum()
+
+    # Adding values into result dataframe
+    if 'cpu' in targets:
+        df_cpu_event["benchmark"] = benchmark_name
+        df_cpu_event["plot_name"] = f"{plot_prefix}_cpu"
+        df_cpu_event = df_cpu_event.filter(items=['timestamp', 'benchmark', 'plot_name', 'value'])
+        result_df = pd.concat([result_df, df_cpu_event], ignore_index=True)
+
+    if 'dram' in targets:
+        df_dram_event["benchmark"] = benchmark_name
+        df_dram_event["plot_name"] = f"{plot_prefix}_dram"
+        df_dram_event = df_dram_event.filter(items=['timestamp', 'benchmark', 'plot_name', 'value'])
+        result_df = pd.concat([result_df, df_dram_event], ignore_index=True)
+
+    if 'total' in targets:
+        df_total["benchmark"] = benchmark_name
+        df_total["plot_name"] = f"{plot_prefix}_total"
+        df_total = df_total.filter(items=['timestamp', 'benchmark', 'plot_name', 'value'])
+        result_df = pd.concat([result_df, df_total], ignore_index=True)
+
+    return result_df
+
+
+def create_plottable_df_for_perf(
+    df,
+    benchmark_name,
+    targets = ['cpu', 'dram', 'total'],
+    plotname_postfix=''
+):
+    # Construct result dataframe
+    result_df = pd.DataFrame(columns=['timestamp', 'benchmark', 'plot_name', 'value'])
+
+    # Calculate total consumption for all available sockets
+    df = df.groupby(['timestamp', 'event'], as_index=False)['value'].sum()
+
+    # Processing and adding global estimation into result dataframe
+    result_df = add_data_by_target_perf(result_df, df, targets, 'perf', benchmark_name)
+
+    return result_df
+
 # Create a plottable dataframe from a energy scope dataframe
 def create_plottable_df_for_energy_scope(
     energy_scope_df,
@@ -850,22 +902,20 @@ def kwollect_process_for_correlation(df_kwollect, solution_name):
 def dataframe_process_for_correlation_by_solution(df_solution, solution):
     # If solution if powerapi we will prepare powerapi dataframe
     if solution == 'powerapi':
-        # Round dataframe timestamp to one second
-        df_solution['timestamp'] = df_solution['timestamp'].dt.floor('1s')
         # Calculate total consumption for all available sockets
         df_solution = df_solution.groupby(['timestamp', 'target', 'scope'], as_index=False)['power'].sum()
         # Calculate global consumption for both dram and cpu scopes
         df_solution = df_solution.groupby(['timestamp', 'target'], as_index=False)['power'].sum()
         # Selecting only rapl values and filter other columns
+        # Round dataframe timestamp to one second
+        df_solution['timestamp'] = df_solution['timestamp'].dt.floor('1s')
+
         df_solution = df_solution[df_solution['target'] == 'rapl']
         df_solution = df_solution.filter(items=['timestamp', 'power'])
         # Rename consumption values column
         df_solution = df_solution.rename(columns={'power': 'tool'})
 
     elif solution == 'scaphandre':
-        # Round dataframe timestamp to 5 seconds = acquisition frequency of scaphandre
-        df_solution['timestamp'] = df_solution['timestamp'].dt.floor('5s')
-
         # Empirically deducted that Pearson coefficient is better is we apply a timedelta of 5 seconds
         df_solution['timestamp'] = df_solution['timestamp'] - datetime.timedelta(seconds=5)
         
@@ -874,6 +924,10 @@ def dataframe_process_for_correlation_by_solution(df_solution, solution):
         # We need at least 2 values of cpu and dram consumption in order to be able to calculate the total rapl consumption
         df_solution = df_solution.groupby(['timestamp'], as_index=False)['value'].sum(min_count=2)
         # Delete all lines where the global consumption was not calculated (value is NaN)
+
+        # Round dataframe timestamp to one second
+        df_solution['timestamp'] = df_solution['timestamp'].dt.floor('1s')
+        
         df_solution = df_solution.dropna(subset=["value"])
         # Leave only necessary columns
         df_solution = df_solution.filter(items=['timestamp', 'value'])
@@ -891,6 +945,19 @@ def dataframe_process_for_correlation_by_solution(df_solution, solution):
         df_solution = df_solution.groupby(pd.Grouper(key='timestamp', axis=0, freq='S', sort=False)).mean()
         # Rename consumption value column
         df_solution = df_solution.rename(columns={"data.data.etotal(W)": "tool"})
+
+    elif solution == 'perf':
+        df_solution = df_solution.groupby(['timestamp'], as_index=False)['value'].sum()
+        # Round dataframe timestamp to 500 ms = acquisition frequency of energy scope
+        df_solution['timestamp'] = df_solution['timestamp'].dt.floor('100ms')
+        # Empirically deducted that correlation is better is we apply a timedelta of 500ms
+        df_solution['timestamp'] = df_solution['timestamp'] + datetime.timedelta(microseconds=500000)
+        # Leave only necessary columns
+        df_solution = df_solution.filter(items=['timestamp','value'])
+        # Calculating mean consumption values from each second to be able to compare with wattmeter
+        df_solution = df_solution.groupby(pd.Grouper(key='timestamp', axis=0, freq='S', sort=False)).mean()
+        # Rename consumption value column
+        df_solution = df_solution.rename(columns={"value": "tool"})
 
     else:
         return None
