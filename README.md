@@ -4,7 +4,7 @@ Authors: Mathilde Jay, Vladimir Ostapenco
 The repository is divided between the CPU benchmarks and the GPU benchmarks. Mathilde Jay developed the framework for the GPU benchmarks while Vladimir Ostapenco was in charge of the CPU benchmark experiments. More details on the functionality and instructions of both parts can be found in the corresponding folders.
 
 # Description
-This project automates measuring benchmarks' power and energy consumption with various software-based power meters. It automatically retrieves and processes the results and proposes notebooks to visualize them and study metrics.
+The objective of this project is to experimentally compare software-based power meters. This work automates measuring benchmarks' power and energy consumption with various software-based power meters. It automatically retrieves and processes the results and proposes notebooks to visualize them and study metrics.
 
 ## Language
 The project is developed mainly in Python, for the collection of environment information, the management of the databases, and the process of the results. 
