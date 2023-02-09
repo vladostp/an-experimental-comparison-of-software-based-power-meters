@@ -1,9 +1,10 @@
 #!/bin/bash
-GPU_TOTAL_NUMBER=$0
-COMPILER_DIR=$1
-BINARY_DIR=$2
+declare -i GPU_TOTAL_NUMBER
+GPU_TOTAL_NUMBER=$1
+COMPILER_DIR=$2
+BINARY_DIR=$3
 
-cd COMPILER_DIR
+cd $COMPILER_DIR
 
 for bench in ep lu mg
 do

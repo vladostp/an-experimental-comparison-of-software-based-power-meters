@@ -42,6 +42,10 @@ It was developed by Hervé Mathieu. Please contact him at herve.mathieu@inria.fr
   $ ssh yourlogin@access.grid5000.fr
   $ ssh lyon
 ```
+### Clone the needed repositories in your public folder
+```
+user@flyon:~$ git clone https://github.com/vladostp/an-experimental-comparison-of-software-based-power-meters.git
+```
 
 ### Book a node
 Here are examples on how to deploy and reserve grid5000 nodes.
@@ -61,19 +65,17 @@ To reduce the impact of the OS on our experiment, we chose to use a minimalist O
 To do that we will use the kadeploy option of grid5000:
 ```
 user@flyon:~$ kadeploy3 -k -e ubuntu2004-x64-min -f $OAR_FILE_NODES
-user@flyon:~$ ssh -A root@gemini-1.lyon.grid5000.fr
 ```
 or, if the ressource was reserved:
 ```
 user@flyon:~$ oarsub -C JOBID
 user@flyon:~$ kadeploy3 -k -e ubuntu2004-x64-min -m gemini-1
-user@flyon:~$ ssh -A root@gemini-1.lyon.grid5000.fr
 ```
 You can access the node with ssh (see below). However, we advise you to use the script `code/automation_scripts/gemini1.sh` where all the steps described in the following section are launched automatically. To do so, you need to modify the script to add you login. 
 Either do
 ```
 # Please replace YOURLOGIN in the file and in the following command
-user@flyon:~$ bash /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/code/automation_scripts/gemini1.sh
+user@flyon:~$ bash /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/code/automation_scripts/gemini1.sh
 ```
 or execute the commands below and follow the steps on the following section.
 ```
@@ -104,10 +106,12 @@ bash code/install_scripts/get_env_ready.sh
 ```
 
 - Compile the benchmarks
+The binaries are provided in the `CPU_benchmark_binaries` and `GPU_benchmark_binaries` folders.
+To compile them yourself, please follow next steps:   
 To make sure that the benchmarks will compile, check the compute capability in make.def. It needs to match your GPU.   
 For the gemini cluster of Grid'5000, we changed it to `COMPUTE_CAPABILITY = -gencode arch=compute_70,code=sm_70`.
    
-To compile the NAS benchmark implemented in CUDA, for 2 GPUs:
+To compile the NAS benchmark implemented in CUDA, you first need to install CUDA. Then, execute the following commands, for 2 GPUs:
 ```
 cd ../../
 git clone git@github.com:GMAP/NPB-GPU.git
