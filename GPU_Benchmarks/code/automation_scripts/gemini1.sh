@@ -32,7 +32,7 @@ ssh root@$node "bash $env_script"
 
 # start experiments. 
 ## Here it will start one experiment
-ssh root@$node "python3 $start_script --git_repo $local_git_path --result_folder $result_path --energy_scope_folder $es_folder --CodeCarbon --benchmark_id 0 --repetitions 1 --benchmark_binary_dir $local_git_path/$benchmark_binary_dir/"
+ssh root@$node "python3 $start_script --git_repo $local_git_path --result_folder $result_path --ExperimentImpactTracker --benchmark_id 0 --repetitions 1 --benchmark_binary_dir $local_git_path/$benchmark_binary_dir/"
             
 ## Here it will start one experiment for each benchmark and each available tool.   
 : '
@@ -49,4 +49,4 @@ do
         done
     done
 done
-'
+

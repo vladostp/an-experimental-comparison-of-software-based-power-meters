@@ -33,8 +33,8 @@ This framework was tested on the gemini cluster of the grid'5000 plateform. The 
 Most of the tools require Intel RAPL and NVIDIA NVML to monitor the energy consumption.
 
 ## EnergyScope
-If you are able to get the right version of EnergyScope, please create a folder `software-installation` in the `GPU_Benchmarks` folder and place the code in it. It should be called `energy-scope_v2022-03-24_acquisition.tar`.
-It was developed by Hervé Mathieu. Please contact him at herve.mathieu@inria.fr to ask for the code.
+It is not open sourced and is developed by Hervé Mathieu. Please contact him at herve.mathieu@inria.fr to ask for the code.
+If you are able to get the right version of EnergyScope, please place the code in the `software-installation` folder. It should be called `energy-scope_v2022-03-24_acquisition.tar`.
 
 ## How to use the Grid'5000 testbed
 ### Log into the Lyon site
@@ -48,7 +48,7 @@ user@flyon:~$ git clone https://github.com/vladostp/an-experimental-comparison-o
 ```
 
 ### Book a node
-Here are examples on how to deploy and reserve grid5000 nodes.
+Here are examples on how to deploy and reserve grid5000 nodes. You can check their availability at [https://intranet.grid5000.fr/oar/lyon/drawgantt-svg/](https://intranet.grid5000.fr/oar/lyon/drawgantt-svg/).
 - To book a node a soon as it is available:
 ```
 user@flyon:~$ oarsub -t deploy -t exotic -p "host='gemini-1.lyon.grid5000.fr'" -l walltime=2 -I
@@ -166,17 +166,37 @@ A folder per experiment is created in the result folder you provided to the scri
 In the result folder, you will also find a csv file called `experiment_table.csv` which summarises the results and associates each experiment with meta data describing the environment of the experiments.   
 
 ## Process results
+My advice is to not process the results in the node, but in the frontend. To create the envrionement:
+``` 
+module load miniconda3 # anaconda is available in Grid'5000
+conda create --name gpu_benchmark python=3.7
+conda activate gpu_benchmark
+conda install -c conda-forge scikit-learn
+conda install -c conda-forge pandas
+conda install -c conda-forge numpy
+conda install -c conda-forge matplotlib
+conda install -c anaconda requests
+conda install ipykernel
+python -m ipykernel install --user --name gpu_benchmark --display-name "python 3.7 (GPU Benchmark)"
+```
+Jupyter notebooks can be visualised using the Grid'5000 notebook interface at [https://intranet.grid5000.fr/notebooks/](https://intranet.grid5000.fr/notebooks/).
+    
 Preprocessing is needed to use the resulting data. `code/utils/process_results.py` will do it for you. It merges the resulting files so that they can be easily processed and synchronises them with the `experiment_table.csv` table. The power meter data is retrieved from the Grid'5000 plateform. The energy results are converted to the same unit. The total energy of executing from tools only reporting power are computed. Simple data cleaning steps are also performed. Please check the script for more details.   
 The output is a single dataframe containing all results. A separate dataframe will contain the timeseries of the power used by Energy Scope and the Wattmeters.   
 Example of how to use this script: 
 
 ```
-python utils/process_results.py --local_git_dir $REPO/ --distant_directory $REPO/ --result_folder $REPO/results/test/
+python $REPO/code/utils/process_results.py --local_git_dir $REPO/ --distant_directory $REPO/ --result_folder $REPO/results/test/
 # OR
-python utils/process_results.py --local_git_dir /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/ --distant_directory /root/comparison/  --result_folder /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters /results/test/
+python /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/code/utils/process_results.py 
+    --local_git_dir /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/ 
+    --distant_directory /root/comparison/  
+    --result_folder /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/results/test/
 ```
 The two first argument are usefull when the analysis is done in a different machine.   
 `wattmeter.ipynb` can be used to retrieve the wattmeter data separately.     
+    
+The result folder already contains the experiment result that were used in the paper.
 
 ## Analyse results
 The analysis notebooks can be found in `code/analysis`.
@@ -187,6 +207,9 @@ We focused on:
 - Comparison in energy (`Energy.ipynb`)
 - Overhead in energy of the softwares (`Overhead.ipynb`)
 - Computation of energy through Energy calculators (`Energy calculators.ipynb`)
+
+    
+The notebooks are configured to process the experiments which were used in the paper. They can be used to recreate the visualizations.
 
 # Add a tool in the framework
 To include another tool to the comparison, you need to modify the following files:
