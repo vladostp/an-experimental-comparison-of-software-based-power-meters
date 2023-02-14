@@ -14,5 +14,6 @@ echo "Launching experiments at jobs bench: $1 and data: $2"
 #./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --data_host_jobid $2 --experiment powerapi_cpu_overhead --no_image_deploy
 #./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --data_host_jobid $2 --experiment powerapi_max_process --no_image_deploy
 #./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --data_host_jobid $2 --experiment scaphandre_max_process --no_image_deploy
-./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --experiment perf_power_profile --no_image_deploy --experiment_repeat 12
-./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --experiment no_solution_execution --no_image_deploy --experiment_repeat 12
+#./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --experiment perf_power_profile --no_image_deploy --experiment_repeat 12
+#./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --experiment no_solution_execution --no_image_deploy --experiment_repeat 12
+./launch_experiment.py --g5k_site lyon --bench_host_jobid $1 --experiment perf_sampling_frequency --experiment_repeat 12

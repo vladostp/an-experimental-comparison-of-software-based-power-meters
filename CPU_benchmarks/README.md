@@ -117,6 +117,7 @@ It has following parameters:
 | no_solution_execution | Executes EP D, LU C and MG D benchmarks with 2 minute wait between benchmarks without launching any software-based power meter. Gets the power profiles of BMC and external power meter. |
 | perf_total_energy | Executes EP D, LU C and MG D benchmarks with Perf with 2 minute wait between benchmarks. Gets total energy consumed per benchmark reported by Perf and the power profiles of BMC and external power meter. |
 | perf_power_profile | Executes EP D, LU C and MG D benchmarks with Perf (with interval print option) with 2 minute wait between benchmarks. Gets power profiles reported by Perf, BMC and external power meter. |
+| perf_sampling_frequency | Executes EP D benchmark with Perf with different sampling frequencies (interval print options). Gets power profiles reported by Perf, BMC and external power meter. |
 
 ### Power profiles exepriment launch example
 ```bash
@@ -149,6 +150,7 @@ For each experiment, the [./results/](./results/) directory has a different pref
 | no_solution_execution | no-solution |
 | perf_total_energy | perf-evaluate |
 | perf_power_profile | perf-power-profile |
+| perf_sampling_frequency | perf-sampling-frequency |
 
 Each result directory contains:
 - `experiments.json` file - Contains experiment metadata, description, and runtime logs.

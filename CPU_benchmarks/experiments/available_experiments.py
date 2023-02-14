@@ -379,6 +379,84 @@ def experiment_perf_power_profile(job_bench):
     # Stopping all services and containers at hosts
     experiments.clean_bench_host()
 
+# Perf tool experiment
+def experiment_perf_sampling_freq(job_bench, frequencies):
+    # Creating experiment instance
+    experiments = Experiments('Perf Sampling Frequency')
+    experiments.add_job(job_bench, "bench")
+
+    # Creating tested solutions instances
+    kwollect = Kwollect(experiments)
+    perf = Perf(experiments)
+
+    # Adding solutions to experiment
+    experiments.add_solution(perf)
+    experiments.add_solution(kwollect)
+
+    # Preparing hosts
+    experiments.prepare_bench_host()
+
+    # Set general (cpu and gpu info about bench host, g5k jobs) info to experiment
+    experiments.set_general_info()
+
+    # Executing experiments for different frequencies 
+    for freq in frequencies:
+        freq = str(freq)
+        print("Running experiment with frequency of %s..." % freq)
+        
+        experiment1 = Experiment("Perf" + "-" + freq)
+        experiments.add_experiment(experiment1)
+
+        benchmarks_template = [
+            {
+                "name": "EP NAS Benchmark",
+                "bench_type": "simple",
+                "bin_info": {
+                    "bin_file": "ep.D.x",
+                    "prefix": "sudo perf stat -A -a -e 'power/energy-ram/' -e 'power/energy-pkg/' -o /tmp/result_ep_%s.csv -x : -I %s" % (freq, freq)
+                },
+                "result_file": "result_ep_%s.csv" % freq,
+                "sleep_before": 60, 
+                "sleep_after": 60,
+                "frequency": 0,
+                "threads": 0
+            }
+        ]
+
+        # Calculating frequencies if type of experiment is frequnecies
+        frequencies = generate_frequencies(1000000, int(experiments.get_scaling_max_frequency(0))) if type == "frequencies" else ""
+
+        # Calculating threads if type of experiments is threads
+        threads = generate_thread_num_list(experiments.get_threads_available()) if type == "threads" else ""
+
+        # Adding benchmarks to experiments
+        experiment1.generate_benchmarks(benchmarks_template, frequencies, threads)
+
+        # Running benchmarks
+        experiment1.set_start_time_to_now()
+        print("Experiment start time %s." % experiment1.start_time)
+
+        experiments.run_experiment_benchmarks(experiment1)
+
+        experiment1.set_end_time_to_now()
+        print("Experiment end time %s." % experiment1.end_time)
+
+        # Get data from Kwollect for each benchmark
+        kwollect_df = kwollect.get_consumption(experiment1)
+        experiment1.add_result('kwollect-perf', kwollect_df)
+        print(kwollect_df)
+
+        # Get data from Perf
+        perf_df = perf.get_consumption_profile(experiment1)
+        experiment1.add_result('perf', perf_df)
+        print(perf_df)
+
+    # Saving experiment
+    experiments.save()
+    
+    # Stopping all services and containers at hosts
+    experiments.clean_bench_host()
+
 
 # Perf tool experiment
 def experiment_perf_total_energy(job_bench):
@@ -498,6 +576,18 @@ def perf_power_profile(job_bench, job_data, experiment_repeat, energy_scope_enab
     for i in range(0, experiment_repeat):
         print('Running perf_power_profile experiment [%s/%s]...' % (i+1, experiment_repeat))
         experiment_perf_power_profile(job_bench)
+
+def perf_sampling_frequency(job_bench, job_data, experiment_repeat, energy_scope_enabled):
+    # Creating deployments
+    job_bench.create_deployment('ubuntu2004-x64-min', 'root')
+    job_bench.wait_for_deployment()
+
+    frequencies = [100, 50, 20, 10, 5, 1]
+
+    for i in range(0, experiment_repeat):
+        print('Running perf_sampling_frequency experiment [%s/%s]...' % (i+1, experiment_repeat))
+        experiment_perf_sampling_freq(job_bench, frequencies)
+
 
 def power_profiles(job_bench, job_data, experiment_repeat, energy_scope_enabled):
     # Creating deployments
@@ -1575,4 +1665,5 @@ available_experiments = {
     'no_solution_execution': no_solution_execution,
     'perf_total_energy': perf_total_energy,
     'perf_power_profile': perf_power_profile,
+    'perf_sampling_frequency': perf_sampling_frequency
 }

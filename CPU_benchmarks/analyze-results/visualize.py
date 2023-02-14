@@ -947,15 +947,20 @@ def dataframe_process_for_correlation_by_solution(df_solution, solution):
         df_solution = df_solution.rename(columns={"data.data.etotal(W)": "tool"})
 
     elif solution == 'perf':
+    
         df_solution = df_solution.groupby(['timestamp'], as_index=False)['value'].sum()
+
         # Round dataframe timestamp to 500 ms = acquisition frequency of energy scope
         df_solution['timestamp'] = df_solution['timestamp'].dt.floor('100ms')
+
         # Empirically deducted that correlation is better is we apply a timedelta of 500ms
         df_solution['timestamp'] = df_solution['timestamp'] + datetime.timedelta(microseconds=500000)
+
         # Leave only necessary columns
         df_solution = df_solution.filter(items=['timestamp','value'])
         # Calculating mean consumption values from each second to be able to compare with wattmeter
         df_solution = df_solution.groupby(pd.Grouper(key='timestamp', axis=0, freq='S', sort=False)).mean()
+
         # Rename consumption value column
         df_solution = df_solution.rename(columns={"value": "tool"})
 
