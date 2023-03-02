@@ -83,6 +83,12 @@ The execution of these commande provides you two `OAR_JOB_ID` numbers.
 
 These job IDs are required to launch experiments and must be provided in the `./launch_experiment.py` script call.
 
+### Install required packages
+Before launching experiments, please install the required Python packages.
+```bash
+pip install -r ./experiments/requirements.txt
+```
+
 ## Launch experiments
 The `./experiments/launch_experiment.py` command allows to launch CPU experiments. 
 
@@ -160,6 +166,13 @@ Each result directory contains:
 ## Analyze results
 In order to analyze the results, we use Jupyter notebooks available in the [./analyze-results/](./analyze-results/) directory.
 
+### Install required packages
+Before executing Jupyter notebooks, please install the required Python packages.
+```bash
+pip install -r ./analyze-results/requirements.txt
+```
+
+### Available Jupyter notebooks
 | Jupyter notebook name | Description |
 |--|--|
 | [./analyze-results/application-process-study.ipynb](./analyze-results/application-process-study.ipynb) | In this notebook, we study how PowerAPI and Scaphandre estimate consumption at the application process level. |
