@@ -166,6 +166,8 @@ Each result directory contains:
 ## Analyze results
 In order to analyze the results, we use Jupyter notebooks available in the [./analyze-results/](./analyze-results/) directory.
 
+Some Jupyter notebooks produce figures and save them in `.pdf` and `.png` formats in the [./figures/](./figures/) folder.
+
 ### Install required packages
 Before executing Jupyter notebooks, please install the required Python packages.
 ```bash
@@ -184,7 +186,14 @@ pip install -r ./analyze-results/requirements.txt
 | [./analyze-results/power-profile-study.ipynb](./analyze-results/power-profile-study.ipynb) | In this notebook, we compare the power profiles given by each software power meter, BMC and external power meter. |
 | [./analyze-results/total-energy-study.ipynb](./analyze-results/total-energy-study.ipynb) | In this notebook, we calculate and compare total energy values given by each software power meter, BMC and external power meter. |
 
-Some Jupyter notebooks produce figures and save them in `.pdf` and `.png` formats in the [./figures/](./figures/) folder.
+
+### Available Jupyter notebooks without Energy Scope
+These Jupyter notebooks can be used with experiments performed without Energy Scope.
+| Jupyter notebook name | Description |
+|--|--|
+| [./analyze-results/power-profile-study-no-energy-scope.ipynb](./analyze-results/power-profile-study-no-energy-scope.ipynb) | In this notebook, we compare the power profiles given by each software power meter, BMC and external power meter. |
+| [./analyze-results/total-energy-study-no-energy-scope.ipynb](./analyze-results/total-energy-study-no-energy-scope.ipynb) | In this notebook, we calculate and compare total energy values given by each software power meter, BMC and external power meter. |
+
 
 ## Energy Scope
 Energy Scope is not open source and not publicly available. To ask the Energy Scope code, please contact herve.mathieu@inria.fr.
