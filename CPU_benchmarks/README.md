@@ -51,7 +51,7 @@ kadeploy3 -a ubuntu2004-x64-cpu-0-isolate.yaml
 cd ../
 ```
 
-### Compile benchamrks (Optional)
+### Compile benchmarks (Optional)
 In the [./benchmarks/](./benchmarks/) directory, you can find the NAS benchmarks compiled at a Gemini cluster node of the Grid'5000 testbed.
 
 If you want to run experiments on another node with a different architecture, you must recompile the NAS benchmarks on another node and place the result binaries in the [./benchmarks/](./benchmarks/) directory of this project.
