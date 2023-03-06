@@ -44,11 +44,9 @@ This environment is based on a minimal `Ubuntu 20.04` image with CPU `0` isolate
 In this environment, CPU `0` is not used by the operating system scheduler, so no processes are scheduled on this CPU core.
 In some experiments, we run software-based power meters on this core to assess CPU overhead.
 
-Deploy the Grid'5000 `ubuntu2004-x64-cpu-0-isolate` environment with `kadeploy3` tool:
+Deploy the Grid'5000 `ubuntu2004-x64-cpu-0-isolate` environment with `kaenv3` tool:
 ```bash
-cd environments/
-kadeploy3 -a ubuntu2004-x64-cpu-0-isolate.yaml
-cd ../
+kaenv3 -a environments/ubuntu2004-x64-cpu-0-isolate.yaml
 ```
 
 ### Compile benchmarks (Optional)
