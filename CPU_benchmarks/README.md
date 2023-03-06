@@ -42,7 +42,7 @@ cd an-experimental-comparison-of-software-based-power-meters/CPU_Benchmarks/
 In order to run some experiments, you need to create a special Grid'5000 environment.
 This environment is based on a minimal `Ubuntu 20.04` image with CPU `0` isolated from the operating system.
 In this environment, CPU `0` is not used by the operating system scheduler, so no processes are scheduled on this CPU core.
-In some experiments, we run software-based power meters on this core to assess CPU overhead.
+In some experiments, we run softweare-based power meters on this core to assess CPU overhead.
 
 Deploy the Grid'5000 `ubuntu2004-x64-cpu-0-isolate` environment with `kaenv3` tool:
 ```bash
