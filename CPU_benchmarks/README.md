@@ -34,7 +34,7 @@ First, you need to create a Grid'5000 account and login to a Grid'5000 frontal n
 ### Clone repository
 The repository must be directly cloned to the Grid'5000 frontal node.
 ```bash
-git clone git@gitlab.inria.fr:majay/an-experimental-comparison-of-software-based-power-meters.git
+git clone https://github.com/vladostp/an-experimental-comparison-of-software-based-power-meters.git
 cd an-experimental-comparison-of-software-based-power-meters/CPU_benchmarks/
 ```
 

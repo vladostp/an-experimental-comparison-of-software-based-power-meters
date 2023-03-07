@@ -18,7 +18,7 @@ Once you have access to the testbed, please follow the first steps described in 
 
 ### Compilation and execution environment
 Our framework was tested on the Gemini cluster of the Grid'5000 testbed.
-To start experimenting, please follow the steps described in [CPU_benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/CPU_Benchmarks) and [GPU_Benchmarks](https://gitlab.inria.fr/majay/an-experimental-comparison-of-software-based-power-meters/-/tree/main/GPU_Benchmarks).
+To start experimenting, please follow the steps described in [CPU_benchmarks](https://github.com/vladostp/an-experimental-comparison-of-software-based-power-meters/tree/main/CPU_benchmarks) and [GPU_Benchmarks](https://github.com/vladostp/an-experimental-comparison-of-software-based-power-meters/tree/main/GPU_Benchmarks).
 
 ## Outputs
 For each experiment, we gather environment description (duration, number of GPU/CPU, etc.) and energy measurement metrics as reported by selected tools and the power meters (BMC, OmegaWatt). The output of all experiments can be found in the result folders. Its structure is described in the respective readme-files in the Gitlab repository.
