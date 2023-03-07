@@ -9,9 +9,7 @@ python /home/mjay/GPU_benchmark_energy/code/start_exp.py \
     --energy_scope_folder /home/mjay/energy_scope/ \
     --ExperimentImpactTracker
 
-It was used in grid5000, as can be seen in install_scripts/launch_frontal_gemini-1.sh. 
-The successive launch of the various tools didn't always work so the script was mainly used for one tool at a time.
-Also, one experiment failing would not impact following experiments.
+
 """
 import argparse
 import logging
@@ -166,30 +164,43 @@ def main():
             parallel_bench_list.append(bench_list)
 
         # Configure the tool object
+        error=False
         if tool == EnergyScope:
-            tool_instance = EnergyScope(log_dir, es_src, current_system.job_id, launch_parallel_script)
+            # add an if to check if ES is in the directory
+            es_source_tar = git_repo + "software-installation/energy-scope_v2022-03-24_acquisition.tar"
+            if os.path.exists(es_src):
+                tool_instance = EnergyScope(log_dir, es_src, current_system.job_id, launch_parallel_script)
+            else:
+                logging.info("Energy Scope source files not found at {}\n, looking for its tar file at {}.".format(es_src, es_source_tar))
+                if os.path.exists(es_source_tar):
+                    os.popen("tar -xf {} --directory /root/".format(es_source_tar))
+                    tool_instance = EnergyScope(log_dir, es_src, current_system.job_id, launch_parallel_script)
+                else:
+                    logging.error("Energy Scope tar file not found at {}.".format(es_source_tar))
+                    error=True
         elif tool == PowerTool:
             tool_instance = tool(log_dir, "NoTool")
         else:
             tool_instance = tool(log_dir)
+        
+        if not error:
+            # Create the experiment object
+            current_exp = Experiment(
+                experiments_table=experiments_dir+"experiment_table.csv",
+                tool=tool_instance, 
+                benchmarks=parallel_bench_list,
+                system=current_system,
+                tool_on_one_process=tool_on_one_process,
+            )
 
-        # Create the experiment object
-        current_exp = Experiment(
-            experiments_table=experiments_dir+"experiment_table.csv",
-            tool=tool_instance, 
-            benchmarks=parallel_bench_list,
-            system=current_system,
-            tool_on_one_process=tool_on_one_process,
-        )
+            # Start the experiment
+            current_exp.start()
 
-        # Start the experiment
-        current_exp.start()
-
-        # Process results
-        #current_exp.retrieve_wattmeter_values() #to do afterwards
-        current_exp.process_power_tool_results()
-        current_exp.save_experiment_results()
-        logging.info(pd.DataFrame(current_exp.results).transpose())
+            # Process results
+            #current_exp.retrieve_wattmeter_values() #to do afterwards
+            current_exp.process_power_tool_results()
+            current_exp.save_experiment_results()
+            logging.info(pd.DataFrame(current_exp.results).transpose())
 
 
 if __name__ == '__main__':
