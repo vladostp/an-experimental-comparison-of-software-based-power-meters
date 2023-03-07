@@ -145,7 +145,7 @@ The script `code/start_exp.py` start the experiments. Here is a list of its argu
     - and in the list [('idle', 'sh'), ("mg", "D"), ("lu", "C"), ("ep", "D")] for the CPU benchmarks.
 - CPU: Whether to launch the CPU benchmarks instead of the GPU benchmarks, False by default.
 
-For example, to start the MG NAS benchmark (class D), monitored by the Carbon Tracker tool:
+For example, to start the MG NAS benchmark (class D), monitored by the CodeCarbon tool:
 
 - Using SSH
 ```
