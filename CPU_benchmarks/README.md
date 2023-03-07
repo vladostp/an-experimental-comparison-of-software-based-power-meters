@@ -72,8 +72,13 @@ The first compute node is called the `bench` node and is used to evaluate softwa
 
 The second compute node is called `data`. It is used to retrieve and store software-based power meters and operating system data from the `bench` node.
 
-All experiments were done using the`gemini-1` node as the `bench` node and a `nova` cluster node as the `data` node.
-As `gemini` cluster nodes are heavily used, you can use `nova` cluster nodes for testing.
+All experiments were done on the Lyon Grid'5000 site using the`gemini-1` node as the `bench` node and a `nova` cluster node as the `data` node, which can be reserved for 2 hours with the following commands:
+```bash
+oarsub -t deploy -t exotic -l host=1,walltime=2:00 -p "host='gemini-1.lyon.grid5000.fr'" "sleep infinity"
+oarsub -t deploy -l host=1,walltime=2:00 -p "cluster='nova'" "sleep infinity"
+```
+
+However, as the nodes of the `gemini` cluster are very used and rarely available (you can check the availability of nodes from the Lyon site [here](https://intranet.grid5000.fr/oar/Lyon/drawgantt-svg/ )), you can use the "nova" cluster nodes for testing.
 
 **Example:** Make two deployment-type reservations of `nova` cluster nodes for 4 hours.
 ```bash
