@@ -92,7 +92,7 @@ rsync -avzh mjay@lyon.g5k:/home/mjay/an-experimental-comparison-of-software-base
 This repository contains scripts automating the deployement of series of experiments. All the source code can be found in the `code/` repository.
 
 ```
-REPO=./comparison/
+REPO=/root/comparison/
 cd $REPO
 ```
 
@@ -148,11 +148,12 @@ For example, to start the MG NAS benchmark (class D), monitored by the CodeCarbo
 
 - Using SSH
 ```
-ssh root@gemini-2 "python3.7 /root/comparison/code/start_exp.py --git_repo /root/comparison/ --result_folder /root/compariso1n/results/test/ --CodeCarbon --benchmark_id 1 --repetitions 1 --benchmark_binary_dir /root/comparison/GPU_benchmark_binaries/"
+ssh root@gemini-1 "python3.7 /root/comparison/code/start_exp.py --git_repo /root/comparison/ --result_folder /root/comparison/results/test/ --CodeCarbon --benchmark_id 1 --repetitions 1 --benchmark_binary_dir /root/comparison/GPU_benchmark_binaries/"
 ```
 - From the node
 ```
-python3.7 $REPO/code/start_exp.py --git_repo $REPO/ --result_folder $REPO/results/test/ --CodeCarbon --repetitions 1 --benchmark_id 1 --benchmark_binary_dir /root/comparison/GPU_benchmark_binaries/
+REPO=/root/comparison/
+python3.7 $REPO/code/start_exp.py --git_repo $REPO/ --result_folder $REPO/results/test/ --CodeCarbon --repetitions 1 --benchmark_id 1 --benchmark_binary_dir $REPO/GPU_benchmark_binaries/
 ```
 The gemini cluster has 8 GPUs.
 The `automation_scripts` folder contains examples of how the script can be used to fully automate the experimentations.    
