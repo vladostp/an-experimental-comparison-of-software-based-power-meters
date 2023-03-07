@@ -78,7 +78,7 @@ oarsub -t deploy -t exotic -l host=1,walltime=2:00 -p "host='gemini-1.lyon.grid5
 oarsub -t deploy -l host=1,walltime=2:00 -p "cluster='nova'" "sleep infinity"
 ```
 
-However, as the nodes of the `gemini` cluster are very used and rarely available (you can check the availability of nodes from the Lyon site [here](https://intranet.grid5000.fr/oar/Lyon/drawgantt-svg/ )), you can use the "nova" cluster nodes for testing.
+However, as the nodes of the `gemini` cluster are very used and rarely available (you can check the availability of nodes from the Lyon site [here](https://intranet.grid5000.fr/oar/Lyon/drawgantt-svg/ )), you can use the `nova` cluster nodes for testing.
 
 **Example:** Make two deployment-type reservations of `nova` cluster nodes for 4 hours.
 ```bash
