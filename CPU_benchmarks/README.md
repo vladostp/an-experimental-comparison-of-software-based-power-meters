@@ -87,7 +87,7 @@ oarsub -t deploy -l host=1,walltime=4:00 -p "cluster='nova'" "sleep infinity"
 ```
 The execution of these commande provides you two `OAR_JOB_ID` numbers.
 
-These job IDs are required to launch experiments and must be provided in the `./launch_experiment.py` script call.
+These job IDs will be used to launch experiments later (will be provided when calling the `./experiments/launch_experiment.py` script).
 
 ### Install required packages
 Before launching experiments, please install the required Python packages.
