@@ -72,6 +72,9 @@ The first compute node is called the `bench` node and is used to evaluate softwa
 
 The second compute node is called `data`. It is used to retrieve and store software-based power meters and operating system data from the `bench` node.
 
+All experiments were done using the`gemini-1` node as the `bench` node and a `nova` cluster node as the `data` node.
+As `gemini` cluster nodes are heavily used, you can use `nova` cluster nodes for testing.
+
 **Example:** Make two deployment-type reservations of `nova` cluster nodes for 4 hours.
 ```bash
 oarsub -t deploy -l host=1,walltime=4:00 -p "cluster='nova'" "sleep infinity"
