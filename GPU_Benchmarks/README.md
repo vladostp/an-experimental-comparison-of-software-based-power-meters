@@ -130,8 +130,8 @@ The script `code/start_exp.py` start the experiments. Here is a list of its argu
 - `--energy_scope_folder`: Path to energy scope folder.
 - `--repetitions`: Number of repetitions.
 - `--gpu_range`: Number of GPU to use.
-- `--sleep_before`
-- `--sleep_after``-
+- `--sleep_before`: number of seconds to sleep before the experiment
+- `--sleep_after`: number of seconds to sleep before the experiment
 - `--NoTool`: Launch the benchmarks without tools.
 - `--ExperimentImpactTracker`: Whether to test ExperimentImpactTracker or not.
 - `--PyJoules`: Whether to test PyJoules or not.
