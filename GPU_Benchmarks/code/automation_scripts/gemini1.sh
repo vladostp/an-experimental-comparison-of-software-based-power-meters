@@ -3,7 +3,7 @@
 # This script automates the start of experiments on a gemini node in ssh and the retrieval of results from a local computer
 
 # complete with your login
-login=
+login=YOULOGIN
 user_home="/home/$login/"
 node="gemini-1"
 local_git_path="/root/comparison/"
