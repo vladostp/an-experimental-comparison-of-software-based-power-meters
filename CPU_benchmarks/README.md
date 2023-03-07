@@ -35,7 +35,7 @@ First, you need to create a Grid'5000 account and login to a Grid'5000 frontal n
 The repository must be directly cloned to the Grid'5000 frontal node.
 ```bash
 git clone git@gitlab.inria.fr:majay/an-experimental-comparison-of-software-based-power-meters.git
-cd an-experimental-comparison-of-software-based-power-meters/CPU_Benchmarks/
+cd an-experimental-comparison-of-software-based-power-meters/CPU_benchmarks/
 ```
 
 ### Create Grid'5000 environment
@@ -46,7 +46,7 @@ In some experiments, we run software-based power meters on this core to assess C
 
 Deploy the Grid'5000 `ubuntu2004-x64-cpu-0-isolate` environment with `kaenv3` tool:
 ```bash
-kaenv3 -a environments/ubuntu2004-x64-cpu-0-isolate.yaml
+kaenv3 -a ./environments/ubuntu2004-x64-cpu-0-isolate.yaml
 ```
 
 ### Compile benchmarks (Optional)
