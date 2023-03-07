@@ -62,11 +62,11 @@ user@flyon:~$ oarsub -C JOBID
 user@flyon:~$ kadeploy3 -k -e ubuntu2004-x64-min -m gemini-1
 ```
 This step requires a few minutes.  
-You can access the node with ssh (see next section). However, we advise you to use the script [code/automation_scripts/gemini1.sh](code/automation_scripts/gemini1.sh) where all the steps described in the following section are launched automatically. To do so, you need to modify the script to add you login. This step can take up to ten minutes, and you need to reboot the node afterwards.
+You can access the node with ssh (see next section). However, we advise you to use the script [code/automation_scripts/gemini1.sh](code/automation_scripts/gemini1.sh) where all the steps described in the following section are launched automatically. To do so, you need to modify the script to add your login. This step can take up to ten minutes, and you need to reboot the node afterwards.
 Either do
 ```
 # Please replace YOURLOGIN in the following command and in the file
-user@flyon:~$ bash /home/YOULOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/code/automation_scripts/gemini1.sh
+user@flyon:~$ bash /home/YOURLOGIN/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/code/automation_scripts/gemini1.sh
 user@flyon:~$ ssh root@gemini-1 "reboot 0"
 ```
 Wait until the machine is ready and continue to section [Start experiments](#start-experiments).
