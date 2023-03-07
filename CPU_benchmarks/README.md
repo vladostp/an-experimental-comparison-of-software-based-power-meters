@@ -87,7 +87,7 @@ oarsub -t deploy -l host=1,walltime=4:00 -p "cluster='nova'" "sleep infinity"
 ```
 The execution of these commande provides you two `OAR_JOB_ID` numbers.
 
-These job IDs will be used to launch experiments later (will be provided when calling the `./experiments/launch_experiment.py` script).
+These job IDs will be used to launch experiments later (will be provided when calling the `launch_experiment.py` script).
 
 ### Install required packages
 Before launching experiments, please install the required Python packages.
@@ -96,7 +96,7 @@ pip install -r ./experiments/requirements.txt
 ```
 
 ## Launch experiments
-The `./experiments/launch_experiment.py` command allows to launch CPU experiments. 
+The `launch_experiment.py` script from `./experiments` directory allows you to launch CPU experiments. 
 
 It deploys the necessary environment on the Grid'5000 nodes, applies the necessary system configuration, launches the components of the software-based power meters, runs the benchmarks and finally retrieves and stores the results in the [./results/](./results/) directory.
 
@@ -108,6 +108,12 @@ It has following parameters:
 - `--experiment_repeat` [Optional] (Default: 1) - Number of times to repeat the experiment.
 - `--no_image_deploy` [Optional] - Skip image (Grid'5000 environment) deployment step.
 - `--energy_scope` [Optional] - Do Energy Scope experiments. By default, Energy Scope experiments are disabled because Energy Scope is not open source.
+
+### Power profiles exepriment launch example
+```bash
+cd experiments/
+./launch_experiment.py --g5k_site lyon --bench_host_jobid 1444422 --data_host_jobid 1444433 --experiment power_profiles
+```
 
 ### Available experiments
 | Experiment name | Experiment description |
@@ -130,12 +136,6 @@ It has following parameters:
 | perf_total_energy | Executes EP D, LU C and MG D benchmarks with Perf with 2 minute wait between benchmarks. Gets total energy consumed per benchmark reported by Perf and the power profiles of BMC and external power meter. |
 | perf_power_profile | Executes EP D, LU C and MG D benchmarks with Perf (with interval print option) with 2 minute wait between benchmarks. Gets power profiles reported by Perf, BMC and external power meter. |
 | perf_sampling_frequency | Executes EP D benchmark with Perf with different sampling frequencies (interval print options). Gets power profiles reported by Perf, BMC and external power meter. |
-
-### Power profiles exepriment launch example
-```bash
-cd experiments/
-./launch_experiment.py --g5k_site lyon --bench_host_jobid 1444422 --data_host_jobid 1444433 --experiment power_profiles
-```
 
 ## Result data description
 The execution of an exeriment produces result data containing power profiles or CPU load profiles. 
