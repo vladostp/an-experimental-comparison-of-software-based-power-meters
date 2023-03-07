@@ -124,25 +124,25 @@ mkdir $REPO/results/test/
 ## Start experiments
 The script `code/start_exp.py` start the experiments. Here is a list of its arguments:
 
-- git_repo: Path to this git repository.
-- benchmark_binary_dir: Path to the directory containing the benchmark binaries.
-- result_folder: Path to the folder to save the results in.
-- energy_scope_folder: Path to energy scope folder.
-- repetitions: Number of repetitions.
-- gpu_range: Number of GPU to use.
-- sleep_before
-- sleep_after
-- NoTool: Launch the benchmarks without tools.
-- ExperimentImpactTracker: Whether to test ExperimentImpactTracker or not.
-- PyJoules: Whether to test PyJoules or not.
-- EnergyScope: Whether to test EnergyScope or not.
-- CarbonTrackerTool: Whether to test CarbonTrackerTool or not.
-- CodeCarbon: Whether to test CodeCarbon or not.
-- monitor_one_process: Whether to test the tool on one process or all processes.
-- benchmark_id: If only one benchmark, which one. 
+- `--git_repo`: Path to this git repository.
+- `--benchmark_binary_dir`: Path to the directory containing the benchmark binaries.
+- `--result_folder`: Path to the folder to save the results in.
+- `--energy_scope_folder`: Path to energy scope folder.
+- `--repetitions`: Number of repetitions.
+- `--gpu_range`: Number of GPU to use.
+- `--sleep_before`
+- `--sleep_after``-
+- `--NoTool`: Launch the benchmarks without tools.
+- `--ExperimentImpactTracker`: Whether to test ExperimentImpactTracker or not.
+- `--PyJoules`: Whether to test PyJoules or not.
+- `--EnergyScope`: Whether to test EnergyScope or not.
+- `--CarbonTrackerTool`: Whether to test CarbonTrackerTool or not.
+- `--CodeCarbon`: Whether to test CodeCarbon or not.
+- `--monitor_one_process`: Whether to test the tool on one process or all processes.
+- `--benchmark_id`: If only one benchmark, which one. 
     - The id corresponds to the index in the list [('idle', 'sh'), ("mg", "D"), ("lu", "D"), ("ep", "E")] for the GPU benchmarks
     - and in the list [('idle', 'sh'), ("mg", "D"), ("lu", "C"), ("ep", "D")] for the CPU benchmarks.
-- CPU: Whether to launch the CPU benchmarks instead of the GPU benchmarks, False by default.
+- `--CPU`: Whether to launch the CPU benchmarks instead of the GPU benchmarks, False by default.
 
 For example, to start the MG NAS benchmark (class D), monitored by the CodeCarbon tool:
 
