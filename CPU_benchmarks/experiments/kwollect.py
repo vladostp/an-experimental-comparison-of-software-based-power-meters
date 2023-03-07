@@ -21,7 +21,7 @@ class Kwollect(Solution):
         host_kwollect = self.experiments.jobs["bench"].host
 
         api_link_kwollect = "%s/stable/sites/%s/metrics?nodes=%s&metrics=%s&start_time=%s&end_time=%s" % (self.api_link, site_kwollect, host_kwollect, self.metrics, start_time_kwollect, end_time_kwollect)
-        result_kwollect = requests.get(api_link_kwollect).json()
+        result_kwollect = requests.get(api_link_kwollect, verify=False).json()
         kwollect_pd = pd.json_normalize(result_kwollect)
     
         # Normalize timestamp
