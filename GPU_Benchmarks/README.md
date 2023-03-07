@@ -88,7 +88,6 @@ user@flyon:~$ rsync -avzh bash /home/YOURLOGIN/an-experimental-comparison-of-sof
 user@flyon:~$ ssh -A root@gemini-1.lyon.grid5000.fr
 ```
 
-rsync -avzh mjay@lyon.g5k:/home/mjay/an-experimental-comparison-of-software-based-power-meters/GPU_Benchmarks/ ./
 This repository contains scripts automating the deployement of series of experiments. All the source code can be found in the `code/` repository.
 
 ```
