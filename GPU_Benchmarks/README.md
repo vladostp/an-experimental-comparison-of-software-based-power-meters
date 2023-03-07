@@ -1,6 +1,5 @@
 # An experimental comparison of software-based power meters: GPU side
-Author: Mathilde Jay   
-Last update: February, the 3rd 2023
+Author: Mathilde Jay    
 
 # Tools included in this work
 - CarbonTracker: [https://github.com/lfwa/carbontracker/](https://github.com/lfwa/carbontracker/)
