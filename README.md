@@ -2,7 +2,7 @@
 
 [Mathilde Jay](https://github.com/mjay42) (Univ. Grenoble Alpes, CNRS, Inria, Grenoble INP, LIG),
 [Vladimir Ostapenco](https://github.com/vladostp) (Inria, LIP, ENS de Lyon)<br/>
-_[CCGRID '23](https://ccgrid2023.iisc.ac.in/papers/) |
+[CCGRID '23](https://ccgrid2023.iisc.ac.in/papers/) |
 [GitHub](https://github.com/vladostp/an-experimental-comparison-of-software-based-power-meters/) | [Hal](https://hal.inria.fr/hal-04030223)
 
 The objective of this project is to experimentally compare software-based power meters. This work automates measuring benchmarks' power and energy consumption with various software-based power meters. It automatically retrieves and processes the results and proposes notebooks to visualize them and study metrics.
