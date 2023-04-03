@@ -57,18 +57,6 @@ Energy Scope is not open source and not publicly available. Thus it is not provi
 This research is partially supported by the FrugalCloud collaboration between Inria and OVHCloud.
 Experiments are carried out using the Grid’5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations (see https://www.grid5000.fr).
 
-## BibTeX
-
-```
-@misc{jay2023anexperimental,
-      title={An experimental comparison of software-based power meters: focus on CPU and GPU}, 
-      author={Jay, Mathilde and Ostapenco, Vladimir and Lefèvre, Laurent and Trystram, Denis and Orgerie, Anne-Cécile and Fichel, Benjamin},
-      year={2023},
-      eprint={04030223},
-      archivePrefix={hal}
-}
-```
-
 ## Contact
 Please contact us at mathilde.jay@univ-grenoble-alpes.fr or at vladimir.ostapenco@inria.fr.
 
